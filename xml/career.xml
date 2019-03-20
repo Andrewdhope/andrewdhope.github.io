@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content>
+<!-- don't look back, look forward -->
+	<section option="interests">
+		<bullet>
+			<title>design</title>
+			<line>philosophy</line>
+				<!-- probably more appropriate as an <entry>  -->
+				<project>Usability heuristics
+					<link>https://www.nngroup.com/articles/ten-usability-heuristics/</link>
+				</project>
+			<line>objectives</line>
+			<line>innovation</line>
+		</bullet>
+		<bullet>
+			<title>mining</title>
+			<line>structure</line>
+			<line>evaluation</line>
+			<line>payload</line>
+		</bullet>
+		<bullet>
+			<title>modeling</title>
+			<line>simulate</line>
+			<line>forecast</line>
+			<line>conclude</line>
+		</bullet>
+	</section>
+	<section option="knowledge">
+		<!-- <bullet> 
+			<title>healthcare</title>
+			<note></note>
+			<line></line>
+		</bullet> -->
+		<bullet>
+			<title>engineering</title>
+			<line>dataset evaluation</line>
+			<line>systems design</line>
+			<line>process optimization</line>
+		</bullet>
+		<bullet>
+			<title>statistics</title>
+			<line>regression</line>
+			<line>inference</line>
+			<line>visualization</line>
+		</bullet>
+		<bullet>
+			<title>programming</title>
+			<line>analysis (R)</line>
+			<line>scripting (M)</line>
+			<line>development (C#)</line>
+			<line>presentation (XHTML)</line>
+		</bullet>
+	</section>
+	<section option="projects">
+		<bullet>
+			<title>healthcare</title>
+			<!-- Use shortened names for the tiles (or not), with a hover effect to display a logo, full business name, and link. -->
+			<line>Partners HealthCare
+				<project>patient mobile application
+					<role>design analyst</role>
+					<link>https://itunes.apple.com/us/app/partners-patient-gateway-mobile/id1175078347?mt=8</link>
+				</project>
+				<project>patient reported outcome measures
+					<role>application engineer</role>
+					<link>https://catalyst.nejm.org/implementing-proms-patient-reported-outcome-measures/</link>
+				</project>
+			</line>
+			<line>Hartford HealthCare
+				<project>enterprise implementation
+					<role>technical coordinator</role>
+					<role>support lead</role>
+					<role>vendor architect</role>
+					<link>https://hartfordhealthcare.org/about-us/careconnect/epic-electronic-health-record</link>
+				</project>
+			</line>
+			<line>Stanford Health Care
+				<project>patient scheduling
+					<role>application engineer</role>
+					<link>https://mychart.stanfordhealthcare.org/MakeAppointment/OpenScheduling</link>
+				</project>
+			</line>
+			<line>consulting
+				<project>Scripps Health
+					<role>population analytics</role>
+					<link>https://www.scripps.org/</link>
+				</project>
+				<project>Baptist Memorial Health Care
+					<role>accountable care</role>
+					<link>https://www.baptistonline.org/</link>
+				</project>
+				<project>Lexington Medical Center
+					<role>regulatory reporting</role>
+					<link>http://www.lexmed.com/</link>
+				</project>
+			</line>
+		</bullet>
+		<bullet>
+			<title>engineering</title>
+			<note></note>
+			<line>University of Pittsburgh
+				<project>Bachelor of Science in Industrial Engineering
+					<detail>cum laude</detail>
+					<link>https://www.engineering.pitt.edu/Departments/Industrial/</link>
+				</project>
+				<project>Curtiss-Wright Electro-Mechanical Division
+					<role>Engineering co-op</role>
+					<link>https://www.cw-ems.com/emd/</link>
+				</project>
+			</line>
+			<line>Johns Hopkins University
+				<project>Data Science Specialization with R
+					<link>https://www.coursera.org/account/accomplishments/specialization/certificate/GKCFG624PGQ3</link>
+				</project>
+				<project>capstone project (NLP)
+					<link>https://andrewdhope.shinyapps.io/guess-that-gram/</link>
+				</project>
+			</line>
+			<line>independent development
+				<project>repos
+					<linkset>
+						<link>https://github.com/andrewdhope</link>
+						<link>https://data.world/andrewdhope</link>
+					</linkset>
+				</project>
+				<project>tutorials
+					<linkset>
+						<link>https://javascript.info</link>
+						<link>http://opendatastructures.org</link>
+					</linkset>
+				</project>
+			</line>
+		</bullet>
+		<bullet>
+			<title>leadership</title>
+				<line>structured</line>
+				<line>empowering</line>
+				<line>adaptable</line>
+		</bullet>
+		<bullet>
+			<title>service</title>
+		</bullet>
+	</section>
+</content>

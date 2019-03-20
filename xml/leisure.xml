@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content>
+<!-- don't look back, look forward -->
+	<section option="media">
+		<bullet>
+			<title>sites</title>
+			<line>news
+				<entry>Twitter
+					<!-- twitter lists -->
+					<link>https://twitter.com/</link>
+				</entry>
+				<entry>Five Thirty Eight
+					<link>https://fivethirtyeight.com/</link>
+				</entry>
+				<entry>The Onion
+					<link>https://www.theonion.com/</link>
+				</entry>
+			</line>
+		</bullet>
+		<bullet>
+			<title>tunes</title>
+		</bullet>
+		<bullet>
+			<title>shows</title>
+				<!-- figure out some content for the links -->
+				<line>current
+					<entry>Better Call Saul
+					</entry>
+					<entry>Westworld
+					</entry>
+					<entry>The Good Place
+						<!-- <link>https://www.newyorker.com/magazine/2017/02/06/dystopia-in-the-good-place</link> -->
+					</entry>
+				</line>
+				<line>former
+					<entry>The Simpsons
+						<linkset>
+							<link>https://twitter.com/SimpsonsQOTD</link>
+							<link>https://www.youtube.com/watch?v=KqFNbCcyFkk</link>
+						</linkset>
+					</entry>
+				</line>
+		</bullet>
+		<bullet>
+			<title>casts</title>
+			<line>stories
+				<entry>Hardcore History
+					<link>https://www.dancarlin.com/</link>
+				</entry>
+				<entry>History of Rome
+					<link>https://itunes.apple.com/us/podcast/the-history-of-rome/id261654474</link>
+				</entry>
+			</line>
+			<line>sports
+				<entry>Dunc'd On
+					<link>http://nateduncannba.com/podcast-archive/</link>
+				</entry>
+				<entry>Draft Sharks
+					<link>https://www.draftsharks.com</link>
+				</entry>
+			</line>
+			<line>jokes
+				<entry>Mike and Tom Eat Snacks
+					<link>http://matescast.com/</link>
+				</entry>
+				<entry>The Worst Idea of All Time
+					<link>http://www.worstideaofalltime.com/</link>
+				</entry>
+			</line>
+		</bullet>
+	</section>
+	<section option="activity">
+		<bullet>
+			<title>hikes</title>
+			<line>trails
+				<entry>info
+					<link>https://www.alltrails.com</link>
+				</entry>
+				<entry>local
+					<link>http://sandiegosierraclub.org/get-outdoors/hike/peaks-list/peak-list</link>
+				</entry>
+			</line>
+			<line>gear
+				<entry>used
+					<link>https://sandiego.craigslist.org/d/sporting-goods/search/sga</link>
+				</entry>
+			</line>
+		</bullet>
+		<bullet>
+			<title>lifts</title>
+			<line>maxes
+				<entry>squat
+					<value>325</value>
+					<date>February 2019</date>
+				</entry>
+				<entry>clean
+					<value>225</value>
+					<date>December 2016</date>
+				</entry>
+				<entry>deadlift
+					<value>405</value>
+					<date>November 2016</date>
+				</entry>
+			</line>
+		</bullet>
+		<bullet>
+			<title>runs</title>
+			<line>workouts
+				<entry>Nike Run Club
+				</entry>
+			</line>
+			<line>records
+				<entry>13.1
+					<value>2:08:12</value>
+					<date>November 2018</date>
+				</entry>
+				<entry>5K
+					<value>20:59</value>
+					<date>November 2001</date>
+				</entry>
+			</line>
+		</bullet>
+		<bullet>
+			<title>trips</title>
+			<!-- camping, touring, visiting -->
+		</bullet>
+		<bullet>
+			<title>more</title>
+				<!-- hoops: courts, arenas. games: poker, settlers, evolution. beach: blading, windsurfing. food: recipes, whiskey -->
+		</bullet>
+	</section>
+	<section option="ideas">
+		<bullet>
+			<title>print</title>
+				<line>books
+					<!--use json for each book-->
+					<!--add a timer effect-->
+					<entry>reading
+						<link>A Brief History of Seven Killings</link>
+					</entry>
+					<entry>read
+						<linkset>
+							<link>Wind/Pinball</link>
+							<link>Chronicles, Volume One</link>
+							<link>The Book of Tokyo - A City in Short Fiction</link>
+						</linkset>
+					</entry>
+				</line>
+				<line>pages
+					<entry>Longreads
+						<link>https://longreads.com/</link>
+					</entry>
+					<entry>The Athletic
+						<link>https://theathletic.com/</link>
+					</entry>
+			</line>
+		</bullet>
+		<bullet>
+			<title>tech</title>
+			<line>stacks
+				<!-- R, M, C#, Wolfram, all of my coding bookmarks -->
+				<!-- things i know vs. things i am tracking (FHIR, NLP)-->
+			</line>
+			<line>refs
+				<entry>Cross Validated
+					<link>https://stats.stackexchange.com/</link>
+				</entry>
+				<entry>Portal:Statistics
+					<link>https://en.wikipedia.org/wiki/Portal:Statistics</link>
+				</entry>
+				<entry>Math World
+					<link>http://mathworld.wolfram.com/</link>
+				</entry>
+			</line>
+		</bullet>
+		<bullet>
+			<title>law</title>
+			<line>theory
+				<entry>liberalism
+					<link>https://en.wikipedia.org/wiki/Liberalism</link>
+				</entry>
+				<entry>republicanism
+					<link>https://en.wikipedia.org/wiki/Republicanism</link>
+				</entry>
+			</line>
+			<line>policy
+				<entry>apportionment
+					<linkset>
+						<link>https://thirty-thousand.org/</link>
+						<link>https://www.nytimes.com/interactive/2018/11/09/opinion/expanded-house-representatives-size.html</link>
+					</linkset>
+				</entry>
+			</line>
+		</bullet>
+	</section>
+</content>

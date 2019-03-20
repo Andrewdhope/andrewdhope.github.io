@@ -1,0 +1,254 @@
+:root {
+	--body-margin-top: 24px;
+	--body-margin-bottom: 12px;
+	--header-height: 18px;
+	--footer-height: 12px;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	margin-top: var(--body-margin-top);
+	margin-bottom: var(--body-margin-bottom);
+	margin-left: 24px;
+	margin-right: 24px;
+	min-height: calc(100vh - var(--body-margin-top) - var(--body-margin-bottom));
+	font-family: Ubuntu, Courier;
+	background-color: green;
+}
+
+/* --- HEADER --- */
+
+header {
+	height: var(--header-height);
+}
+
+header.up {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+header.down {
+	position: absolute;
+	bottom: 50%;
+	right: 50%;
+	transform: translateX(50%) translateY(50%);
+	/* standard method to center an element with absolute position */
+}
+
+header span {
+	color: #cccccc;
+}
+
+/* split class to hold styles for the main branching option */
+.split {
+	color: #cccccc;
+}
+
+.centered { 
+	text-align: center;
+	height: inherit;
+}
+
+/* --- MENU --- */
+
+li.menulist {
+	padding: 1px 0px 1px 0px;
+}
+
+li.menulist a.selected {
+	font-weight: bold;
+}
+
+/* --- GENERAL --- */ 
+
+a {
+	color: #cccccc;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* --- BODY --- */ 
+
+section#content {
+	width: 75%;
+	float: left;
+	padding-bottom: 20px;
+	box-sizing: border-box;
+	background-color: green;
+	color: #cccccc;
+}
+
+section#content.border {
+	border-width: 0px 0px 1px 1px;
+	border-style: dashed;
+}
+
+nav#menu {
+	width: 25%;
+	float: right;
+	padding-bottom: 5px;
+	box-sizing: border-box;
+	background-color: green;
+	color: #cccccc;
+}
+
+nav#menu.border {
+	border-width: 0px 1px 1px 0px;
+	border-style: dashed;
+}
+
+nav#menu ul {
+	list-style-type: none;
+	padding-left: 20px;
+}
+
+nav#menu li:before {
+	content: " - ";
+	padding-right: 10px;
+}
+
+/* positioning of the group class to keep the footer stuck to the bottom */
+
+.group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.group {
+	/* top and bottom margins on the body + total height of header with padding + total height of footer with margin */
+	min-height: calc(100vh - 98px);
+}
+
+/* collapsible headers */
+
+h2, h3 {
+	display: inline-block;
+}
+
+h2:hover, h3:hover {
+	text-decoration: underline;
+}
+
+h2.collapsible, h3.collapsible {
+	cursor: pointer;
+}
+
+h2.empty:hover, h3.empty:hover {
+	text-decoration: none;
+}
+
+h2.empty, h3.empty` {
+	cursor: default;
+}
+
+.lineset {
+	display: none; /* needed for slideDown */
+	border-style: dashed;
+	border-width: 0px 0px 0px 1px;
+}
+
+/* expand_more and expand_less icons */
+
+div.bullet span.material-icons {
+	vertical-align: text-bottom;
+}
+
+div.line span.material-icons {
+	vertical-align: middle;
+}
+
+/* indentations */
+
+.bullet {
+	padding-left: 10%;
+}
+
+.line {
+	display: none; /* needed for jQuery effects */
+	padding-left: 10%;
+}
+
+.project, .entry {
+	display: none; /* needed for jQuery effects */
+	padding: 1px 0px 1px 0px;
+}
+
+
+.project a, .entry a, .entry span {
+	padding-left: 5%;
+	padding-right: 1%;
+}
+
+.role {
+	padding-left: 1%;
+	border-left-width: 1px;
+	border-left-style: dashed;
+}
+
+.role-wrap {
+	padding-left: 5%;
+	margin: 1px 0px 0px 1px;
+}
+
+.role-wrap .role {
+	padding-left: 1%;
+	padding-right: 1%;
+	border-left-width: 0px;
+}
+
+.role-wrap .role:first-child {
+	border-left-width: 1px;
+	border-left-style: dashed;
+}
+
+span.multi-project, span.multi-entry {
+	padding-left: 5%;
+	padding-right: 0%;
+}
+
+a.multi-project, a.multi-entry {
+	padding-left: 0.5%;
+	padding-right: 0%;
+}
+
+/* general effects */
+
+.project .multi-project:link, .project .multi-project:visited, .entry .multi-entry:link, .entry .multi-entry:visited  {
+	text-decoration: none;
+}
+
+.project a.multi-project:hover, .entry a.multi-entry:hover {
+	text-decoration: underline;
+}
+
+.project a:link, .project a:visited, .entry a:link, .entry a:visited {
+	text-decoration: underline;
+}
+
+/* --- FOOTER --- */
+
+footer {
+	width: 100%;
+	height: var(--footer-height);
+	margin-top: 12px;
+	text-align: right;
+	font-size: x-small;
+	font-family: ubuntu, courier;
+	color: #ccc;
+}
+
+footer p {
+	display: none;
+	margin: 0px;
+}
+
+footer p.footlinks {
+	float: left;
+}
