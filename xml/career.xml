@@ -4,130 +4,217 @@
 	<section option="interests">
 		<bullet>
 			<title>design</title>
-			<line>philosophy</line>
-				<!-- probably more appropriate as an <entry>  -->
-				<project>Usability heuristics
+			<line>philosophy
+				<entry>usability heuristics
 					<link>https://www.nngroup.com/articles/ten-usability-heuristics/</link>
-				</project>
-			<line>objectives</line>
-			<line>innovation</line>
+				</entry>
+			</line>
+			<line>objectives
+				<entry>documented
+					<link>https://vita.had.co.nz/papers/tidy-data.pdf</link>
+				</entry>
+				<entry>measurable
+					<link>https://kpi.org/KPI-Basics/Dashboarding-and-Analysis</link>
+				</entry>				
+			</line>
+			<line>innovation
+				<entry>computational
+					<link>https://www.wolframscience.com/nks/p27--how-do-simple-programs-behave/</link>
+				</entry>
+			</line>
 		</bullet>
 		<bullet>
 			<title>mining</title>
-			<line>structure</line>
-			<line>evaluation</line>
-			<line>payload</line>
+			<line>structure
+				<entry>warehousing
+					<link>http://www.essai.rnu.tn/Ebook/Informatique/The%20Data%20Warehouse%20Toolkit,%203rd%20Edition.pdf</link>
+				</entry>
+			</line>
+			<line>extraction
+				<entry>Tidyverse
+					<link>https://www.tidyverse.org/</link>
+				</entry>
+				<entry>MapReduce
+					<link>https://hadoop.apache.org/docs/r1.2.1/mapred_tutorial.html</link>
+				</entry>
+			</line>
+			<line>payload
+				<entry>pipelines
+					<link>https://aws.amazon.com/datapipeline/</link>
+					<!-- http://www.wolfram.com/notebooks/?source=frontpage-features -->
+				</entry>
+				<entry>interfaces
+					<linkset>
+						<link>http://www.json.org/</link>
+						<link>https://cran.r-entry.org/web/packages/rjson/index.html</link>
+						<link>https://www.hl7.org/fhir/summary.html</link>
+					</linkset>
+				</entry>
+			</line>
 		</bullet>
 		<bullet>
 			<title>modeling</title>
-			<line>simulate</line>
-			<line>forecast</line>
-			<line>conclude</line>
+			<line>simulation
+				<entry>platform
+					<link>http://www.wolfram.com/language/?source=nav</link>
+				</entry>
+			</line>	
+			<line>forecasting
+				<entry>principles
+					<link>https://otexts.com/fpp2/</link>
+				</entry>
+			</line>
+			<line>calibration
+				<entry>methods
+					<linkset>
+						<link>https://stats.stackexchange.com/</link>
+						<link>https://en.wikipedia.org/wiki/Portal:Statistics</link>
+						<link>http://mathworld.wolfram.com/</link>
+					</linkset>
+				</entry>
+			</line>
 		</bullet>
 	</section>
 	<section option="knowledge">
-		<!-- <bullet> 
-			<title>healthcare</title>
-			<note></note>
-			<line></line>
-		</bullet> -->
 		<bullet>
 			<title>engineering</title>
-			<line>dataset evaluation</line>
-			<line>systems design</line>
-			<line>process optimization</line>
+			<line>dataset evaluation
+				<entry>package
+					<link>https://moderndive.com/</link>
+				</entry>
+			</line>	
+			<line>systems design
+				<entry>platform
+					<link>https://dotnet.microsoft.com/</link>
+				</entry>
+			</line>
+			<line>process optimization
+				<entry>productivity
+					<link>https://www.iise.org/details.aspx?id=835</link>
+				</entry>
+			</line>
 		</bullet>
 		<bullet>
 			<title>statistics</title>
-			<line>regression</line>
-			<line>inference</line>
-			<line>visualization</line>
+			<line>regression
+				<entry>The Elements of Statistical Learning
+					<link>https://web.stanford.edu/~hastie/Papers/ESLII.pdf</link>
+				</entry>
+			</line>
+			<line>inference
+				<entry>Computer Age Statistical Inference
+					<link>https://web.stanford.edu/~hastie/CASI_files/PDF/casi.pdf</link>
+				</entry>
+			</line>
+			<line>visualization
+				<entry>A Layered Grammar of Graphics
+					<link>https://vita.had.co.nz/papers/layered-grammar.pdf</link>
+				</entry>
+				<entry>Data Visualization Society
+					<link>https://www.datavisualizationsociety.com/</link>
+				</entry>
+			</line>
 		</bullet>
 		<bullet>
 			<title>programming</title>
-			<line>analysis (R)</line>
-			<line>scripting (M)</line>
-			<line>development (C#)</line>
-			<line>presentation (XHTML)</line>
+			<line>analysis
+				<entry>R
+					<link>https://swirlstats.com/</link>
+				</entry>
+			</line>
+			<line>scripting
+				<entry>M
+					<link>http://mumps.sourceforge.net/docs.html</link>
+				</entry>
+			</line>
+			<line>development
+				<entry>C#
+					<link>https://docs.microsoft.com/en-us/dotnet/csharp/</link>
+				</entry>
+			</line>
+			<line>presentation
+				<entry>HTML5
+					<link>https://css-tricks.com/</link>
+				</entry>
+			</line>
 		</bullet>
 	</section>
 	<section option="projects">
 		<bullet>
 			<title>healthcare</title>
-			<!-- Use shortened names for the tiles (or not), with a hover effect to display a logo, full business name, and link. -->
 			<line>Partners HealthCare
-				<project>patient mobile application
+				<entry>patient mobile application
 					<role>design analyst</role>
 					<link>https://itunes.apple.com/us/app/partners-patient-gateway-mobile/id1175078347?mt=8</link>
-				</project>
-				<project>patient reported outcome measures
+				</entry>
+				<entry>patient reported outcome measures
 					<role>application engineer</role>
 					<link>https://catalyst.nejm.org/implementing-proms-patient-reported-outcome-measures/</link>
-				</project>
+				</entry>
 			</line>
 			<line>Hartford HealthCare
-				<project>enterprise implementation
+				<entry>enterprise implementation
 					<role>technical coordinator</role>
 					<role>support lead</role>
 					<role>vendor architect</role>
 					<link>https://hartfordhealthcare.org/about-us/careconnect/epic-electronic-health-record</link>
-				</project>
+				</entry>
 			</line>
 			<line>Stanford Health Care
-				<project>patient scheduling
+				<entry>patient scheduling
 					<role>application engineer</role>
 					<link>https://mychart.stanfordhealthcare.org/MakeAppointment/OpenScheduling</link>
-				</project>
+				</entry>
 			</line>
 			<line>consulting
-				<project>Scripps Health
+				<entry>Scripps Health
 					<role>population analytics</role>
 					<link>https://www.scripps.org/</link>
-				</project>
-				<project>Baptist Memorial Health Care
+				</entry>
+				<entry>Baptist Memorial Health Care
 					<role>accountable care</role>
 					<link>https://www.baptistonline.org/</link>
-				</project>
-				<project>Lexington Medical Center
+				</entry>
+				<entry>Lexington Medical Center
 					<role>regulatory reporting</role>
 					<link>http://www.lexmed.com/</link>
-				</project>
+				</entry>
 			</line>
 		</bullet>
 		<bullet>
 			<title>engineering</title>
 			<note></note>
 			<line>University of Pittsburgh
-				<project>Bachelor of Science in Industrial Engineering
+				<entry>Bachelor of Science in Industrial Engineering
 					<detail>cum laude</detail>
 					<link>https://www.engineering.pitt.edu/Departments/Industrial/</link>
-				</project>
-				<project>Curtiss-Wright Electro-Mechanical Division
+				</entry>
+				<entry>Curtiss-Wright Electro-Mechanical Division
 					<role>Engineering co-op</role>
 					<link>https://www.cw-ems.com/emd/</link>
-				</project>
+				</entry>
 			</line>
 			<line>Johns Hopkins University
-				<project>Data Science Specialization with R
+				<entry>Data Science Specialization with R
 					<link>https://www.coursera.org/account/accomplishments/specialization/certificate/GKCFG624PGQ3</link>
-				</project>
-				<project>capstone project (NLP)
+				</entry>
+				<entry>capstone entry (NLP)
 					<link>https://andrewdhope.shinyapps.io/guess-that-gram/</link>
-				</project>
+				</entry>
 			</line>
 			<line>independent development
-				<project>repos
+				<entry>repos
 					<linkset>
 						<link>https://github.com/andrewdhope</link>
 						<link>https://data.world/andrewdhope</link>
 					</linkset>
-				</project>
-				<project>tutorials
+				</entry>
+				<entry>tutorials
 					<linkset>
 						<link>https://javascript.info</link>
 						<link>http://opendatastructures.org</link>
 					</linkset>
-				</project>
+				</entry>
 			</line>
 		</bullet>
 		<bullet>

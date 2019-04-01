@@ -3,7 +3,7 @@
 <xsl:param name="sectionVal" />
 <xsl:template match="content">
 <xsl:for-each select="section[@option = $sectionVal]/bullet">
-	<xsl:variable name="bullet" select="normalize-space(title/text())" /> 
+	<xsl:variable name="bullet" select="normalize-space(title/text())" />
 	<div class="bullet" id="{$bullet}">
 		<!-- assign a class (collapsible, empty) based on whether there is content under this bullet -->
 		<xsl:element name="h2">
@@ -28,7 +28,8 @@
 			<xsl:for-each select="line">
 			<!-- element IDs shouldn't contain spaces, use translate to remove them with XSLT 1.0 -->
 			<xsl:variable name="line" select="translate(normalize-space(text()),' ','_')" />
-			<div class="line" id="{$line}">	
+			
+			<div class="line" id="{$line}">
 				<!-- assign a class (collapsible, empty) based on whether there is content under this line -->
 				<xsl:element name="h3">
 					<xsl:if test="count(entry) = 0">
@@ -42,7 +43,7 @@
 					</xsl:attribute>
 					<xsl:value-of select="normalize-space(text())"/> <!-- actual value of the header -->
 				</xsl:element>
-				
+			
 				<xsl:if test="count(entry) > 0">
 					<span class="material-icons">expand_more</span>
 				</xsl:if>
@@ -91,11 +92,24 @@
 							</xsl:otherwise>
 						</xsl:choose>
 						
+						<!-- roles -->
+						<xsl:if test="count(role) = 1">
+							<span class="role"><xsl:value-of select="normalize-space(role/text())" /></span>
+						</xsl:if>
+						<!-- in some cases we want the roles in their own div below the entry name -->
+						<xsl:if test="(count(role) &gt; 1) or ((linkwrap) and (role))">
+							<div class="role-wrap">
+								<xsl:for-each select="role">
+									<span class="role"><xsl:value-of select="normalize-space(text())" /></span>
+								</xsl:for-each>
+							</div>
+						</xsl:if>
+						
 						<!-- details -->
 						<xsl:for-each select="detail">
 							<sup><xsl:value-of select="normalize-space(text())" /></sup>
-						</xsl:for-each>
-					</div>
+						</xsl:for-each>	
+					</div>	
 				</xsl:for-each>
 			</div>
 		</xsl:for-each>

@@ -136,13 +136,13 @@
 					<!--use json for each book-->
 					<!--add a timer effect-->
 					<entry>reading
-						<link>A Brief History of Seven Killings</link>
+						<link>https://en.wikipedia.org/wiki/Steppenwolf_(novel)</link>
 					</entry>
 					<entry>read
 						<linkset>
-							<link>Wind/Pinball</link>
-							<link>Chronicles, Volume One</link>
-							<link>The Book of Tokyo - A City in Short Fiction</link>
+							<link>https://en.wikipedia.org/wiki/A_Brief_History_of_Seven_Killings</link>
+							<link>https://en.wikipedia.org/wiki/Hear_the_Wind_Sing</link>
+							<link>https://en.wikipedia.org/wiki/Chronicles:_Volume_One</link>
 						</linkset>
 					</entry>
 				</line>
@@ -162,15 +162,6 @@
 				<!-- things i know vs. things i am tracking (FHIR, NLP)-->
 			</line>
 			<line>refs
-				<entry>Cross Validated
-					<link>https://stats.stackexchange.com/</link>
-				</entry>
-				<entry>Portal:Statistics
-					<link>https://en.wikipedia.org/wiki/Portal:Statistics</link>
-				</entry>
-				<entry>Math World
-					<link>http://mathworld.wolfram.com/</link>
-				</entry>
 			</line>
 		</bullet>
 		<bullet>
