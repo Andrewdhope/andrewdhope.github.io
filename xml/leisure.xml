@@ -207,13 +207,14 @@
 		<bullet list-orientation="vert">
 			<title>runs</title>
 			<line>routes
-				<entry>Nike Run Club</entry>
-					<link>https://www.nike.com/us/en_us/c/running/nike-run-club</link>
 				<entry>Mission Trails
 					<link>https://mtrp.org/</link>
 				</entry>
 				<entry>Fiesta Island
 					<link>https://rootsrated.com/san-diego-ca/road-running/fiesta-island-road-running</link>
+				</entry>
+				<entry>Nike Run Club
+					<link>https://www.nike.com/us/en_us/c/running/nike-run-club</link>
 				</entry>
 			</line>
 			<line>records
