@@ -152,15 +152,16 @@ h2.empty, h3.empty` {
 	display: none; /* needed for slideDown */
 	border-style: dashed;
 	border-width: 0px 0px 0px 1px;
+	padding-left: 5%;
 }
 
 /* expand_more and expand_less icons */
 
-div.bullet span.material-icons {
+.bullet span.material-icons {
 	vertical-align: text-bottom;
 }
 
-div.line span.material-icons {
+.line span.material-icons {
 	vertical-align: middle;
 }
 
@@ -172,17 +173,33 @@ div.line span.material-icons {
 
 .line {
 	display: none; /* needed for jQuery effects */
-	padding-left: 10%;
+	padding-left: 5%; 
 }
 
-.project, .entry {
+.entry {
 	display: none; /* needed for jQuery effects */
-	padding: 1px 0px 1px 0px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 5%;
+	padding-right: 23px; /* originally for the arenas dropdown */
 }
 
+.entryset {
+	display: none; /* needed for jQuery effects */
+	padding-left: 7.5%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
 
-.entry a {
-	padding-left: 5%;
+/* a few tailored styles for the arenas dropdown */
+#hoops .entryset.horiz  {
+	text-align: right;  
+	border-right-width: 1px;
+	border-right-style: dashed;
+	padding-left: 0px;
+}
+
+.entry a, .entry span {
 	padding-right: 1%;
 }
 
@@ -193,7 +210,6 @@ span.role {
 }
 
 .role-wrap {
-	padding-left: 5%;
 	margin: 1px 0px 0px 1px;
 }
 
@@ -208,27 +224,26 @@ span.role {
 	border-left-style: dashed;
 }
 
-span.multi-project, span.multi-entry {
-	padding-left: 5%;
+span.multi-entry {
 	padding-right: 0%;
 }
 
-a.multi-project, a.multi-entry {
+a.multi-entry {
 	padding-left: 0.5%;
 	padding-right: 0%;
 }
 
 /* general effects */
 
-.project .multi-project:link, .project .multi-project:visited, .entry .multi-entry:link, .entry .multi-entry:visited  {
+.entry .multi-entry:link, .entry .multi-entry:visited  {
 	text-decoration: none;
 }
 
-.project a.multi-project:hover, .entry a.multi-entry:hover {
+.entry a.multi-entry:hover {
 	text-decoration: underline;
 }
 
-.project a:link, .project a:visited, .entry a:link, .entry a:visited {
+.entry a:link, .entry a:visited, .line a:link, .line a:visited {
 	text-decoration: underline;
 }
 

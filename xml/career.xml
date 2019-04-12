@@ -2,7 +2,7 @@
 <content>
 <!-- don't look back, look forward -->
 	<section option="interests">
-		<bullet>
+		<bullet list-orientation="vert">
 			<title>design</title>
 			<line>philosophy
 				<entry>usability heuristics
@@ -23,7 +23,7 @@
 				</entry>
 			</line>
 		</bullet>
-		<bullet>
+		<bullet list-orientation="vert">
 			<title>mining</title>
 			<line>structure
 				<entry>warehousing
@@ -41,18 +41,17 @@
 			<line>payload
 				<entry>pipelines
 					<link>https://aws.amazon.com/datapipeline/</link>
-					<!-- http://www.wolfram.com/notebooks/?source=frontpage-features -->
 				</entry>
 				<entry>interfaces
 					<linkset>
 						<link>http://www.json.org/</link>
-						<link>https://cran.r-entry.org/web/packages/rjson/index.html</link>
+						<link>https://cran.r-project.org/web/packages/rjson/index.html</link>
 						<link>https://www.hl7.org/fhir/summary.html</link>
 					</linkset>
 				</entry>
 			</line>
 		</bullet>
-		<bullet>
+		<bullet list-orientation="vert">
 			<title>modeling</title>
 			<line>simulation
 				<entry>platform
@@ -76,7 +75,7 @@
 		</bullet>
 	</section>
 	<section option="knowledge">
-		<bullet>
+		<bullet list-orientation="vert">
 			<title>engineering</title>
 			<line>dataset evaluation
 				<entry>package
@@ -94,7 +93,7 @@
 				</entry>
 			</line>
 		</bullet>
-		<bullet>
+		<bullet list-orientation="vert">
 			<title>statistics</title>
 			<line>regression
 				<entry>The Elements of Statistical Learning
@@ -115,7 +114,7 @@
 				</entry>
 			</line>
 		</bullet>
-		<bullet>
+		<bullet list-orientation="vert">
 			<title>programming</title>
 			<line>analysis
 				<entry>R
@@ -124,7 +123,7 @@
 			</line>
 			<line>scripting
 				<entry>M
-					<link>http://mumps.sourceforge.net/docs.html</link>
+					<link>http://mumps.sourceforge.net/docs.html</link> <!-- F#? -->
 				</entry>
 			</line>
 			<line>development
@@ -140,7 +139,7 @@
 		</bullet>
 	</section>
 	<section option="projects">
-		<bullet>
+		<bullet list-orientation="vert">
 			<title>healthcare</title>
 			<line>Partners HealthCare
 				<entry>patient mobile application
@@ -181,7 +180,7 @@
 				</entry>
 			</line>
 		</bullet>
-		<bullet>
+		<bullet list-orientation="vert">
 			<title>engineering</title>
 			<note></note>
 			<line>University of Pittsburgh
@@ -198,7 +197,7 @@
 				<entry>Data Science Specialization with R
 					<link>https://www.coursera.org/account/accomplishments/specialization/certificate/GKCFG624PGQ3</link>
 				</entry>
-				<entry>capstone entry (NLP)
+				<entry>capstone project (NLP)
 					<link>https://andrewdhope.shinyapps.io/guess-that-gram/</link>
 				</entry>
 			</line>
@@ -212,18 +211,23 @@
 				<entry>tutorials
 					<linkset>
 						<link>https://javascript.info</link>
+						<link>https://fsharp.org/about/index.html</link>
 						<link>http://opendatastructures.org</link>
 					</linkset>
 				</entry>
+				<entry>showcase
+					<link>https://andrewdhope.com/</link>
+				</entry>
 			</line>
 		</bullet>
-		<bullet>
+		<bullet list-orientation="vert">
 			<title>leadership</title>
+				<!-- dig through and commit quotes -->
 				<line>structured</line>
 				<line>empowering</line>
 				<line>adaptable</line>
 		</bullet>
-		<bullet>
+		<bullet list-orientation="vert">
 			<title>service</title>
 		</bullet>
 	</section>

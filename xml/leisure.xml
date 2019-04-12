@@ -2,37 +2,80 @@
 <content>
 <!-- don't look back, look forward -->
 	<section option="media">
-		<bullet>
+		<bullet list-orientation="vert">
 			<title>sites</title>
 			<line>news
 				<entry>Twitter
-					<!-- twitter lists -->
-					<link>https://twitter.com/</link>
+					<link>https://twitter.com/</link> <!-- https://twitter.com/atul/lists/tech-bloggers-reporters -->
 				</entry>
 				<entry>Five Thirty Eight
 					<link>https://fivethirtyeight.com/</link>
+				</entry>
+				<entry>The Upshot
+					<link>https://www.nytimes.com/section/upshot</link>
 				</entry>
 				<entry>The Onion
 					<link>https://www.theonion.com/</link>
 				</entry>
 			</line>
+			<line>food
+				<entry>dine
+					<link>https://www.pacificsandiego.com/eat-drink-puff/restaurants/</link>
+				</entry>
+				<entry>dram
+					<link>http://www.allthingswhisky.com/</link>
+				</entry>
+			</line>
 		</bullet>
-		<bullet>
+		<bullet list-orientation="vert">
 			<title>tunes</title>
+			<line>tools
+				<entry>MusicBee
+					<link>https://getmusicbee.com/</link>
+				</entry>
+				<entry>MP3Million
+					<link>https://www.mp3million.com/</link>
+				</entry>
+				<entry>MusicBrainz Picard
+					<link>https://picard.musicbrainz.org/</link>
+				</entry>
+				<entry>Music Manager
+					<link>https://support.google.com/googleplaymusic/answer/1075570?hl=en</link>
+				</entry>
+			</line>
+			<line>venues
+				<entry>The Observatory
+					<link>http://www.observatorysd.com/</link>
+				</entry>
+				<entry>Omnia
+					<link>https://omniaclubs.com/san-diego/</link>
+				</entry>
+				<entry>Viejas
+					<link>https://as.sdsu.edu/viejas_arena/events/</link>
+				</entry>
+				<entry>Humphreys
+					<link>http://humphreysconcerts.com/schedule.cfm</link>
+				</entry>
+				<entry>The Majestic
+					<link>http://majesticmadison.com/</link>
+				</entry>
+			</line>
 		</bullet>
-		<bullet>
+		<bullet list-orientation="vert">
 			<title>shows</title>
 				<!-- figure out some content for the links -->
-				<line>current
+				<line>modern
 					<entry>Better Call Saul
+						<link>https://www.imdb.com/title/tt3032476/plotsummary?ref_=tt_stry_pl</link>
 					</entry>
 					<entry>Westworld
+						<link>https://www.imdb.com/title/tt0475784/plotsummary?ref_=tt_stry_pl</link>
 					</entry>
 					<entry>The Good Place
-						<!-- <link>https://www.newyorker.com/magazine/2017/02/06/dystopia-in-the-good-place</link> -->
+						<link>https://www.imdb.com/title/tt4955642/plotsummary?ref_=tt_stry_pl</link>
 					</entry>
 				</line>
-				<line>former
+				<line>classic
 					<entry>The Simpsons
 						<linkset>
 							<link>https://twitter.com/SimpsonsQOTD</link>
@@ -41,7 +84,7 @@
 					</entry>
 				</line>
 		</bullet>
-		<bullet>
+		<bullet list-orientation="vert">
 			<title>casts</title>
 			<line>stories
 				<entry>Hardcore History
@@ -70,43 +113,106 @@
 		</bullet>
 	</section>
 	<section option="activity">
-		<bullet>
-			<title>hikes</title>
-			<line>trails
-				<entry>info
+		<bullet list-orientation="vert">
+			<title>maps</title>
+			<line>peaks
+				<entry>trails
 					<link>https://www.alltrails.com</link>
 				</entry>
 				<entry>local
 					<link>http://sandiegosierraclub.org/get-outdoors/hike/peaks-list/peak-list</link>
 				</entry>
 			</line>
+			<line>seas
+				<link>https://www.sailflow.com/spot/83533</link>
+			</line>
 			<line>gear
-				<entry>used
-					<link>https://sandiego.craigslist.org/d/sporting-goods/search/sga</link>
+				<link>https://sandiego.craigslist.org/d/sporting-goods/search/sga</link>
+			</line>
+		</bullet>
+		<bullet list-orientation="horiz">
+			<title>hoops</title>
+			<!-- utilizing standalone links (no entry nodes) -->
+			<line>squad
+				<link>https://www.reddit.com/r/bostonceltics/</link>
+			</line>
+			<line>draft
+				<link>https://www.nbadraft.net/</link>
+			</line>
+			<line>news
+				<link>https://twitter.com/nateduncannba/lists/nba-newsbreakers?lang=en</link>
+			</line>
+			<line>stats
+				<link>https://www.basketball-reference.com/</link>
+			</line>
+			<line>courts
+				<link>https://www.instagram.com/hypecourts/?hl=en</link>
+			</line>
+			<line>arenas
+				<entry>Bucks
+					<link>https://www.basketball-reference.com/boxscores/201502070MIL.html</link>
+				</entry>
+				<entry>Wolves
+					<link>https://www.basketball-reference.com/boxscores/201401040MIN.html</link>
+				</entry>
+				<entry>Bulls
+					<link>https://www.basketball-reference.com/boxscores/201501030CHI.html</link>
+				</entry>
+				<entry>Pacers
+					<link>https://www.basketball-reference.com/boxscores/201611120IND.html</link>
+				</entry>
+				<entry>Clippers
+					<link>https://www.basketball-reference.com/boxscores/201712090LAC.html</link>
+				</entry>
+				<entry>Grizzlies
+					<link>https://www.basketball-reference.com/boxscores/201811270MEM.html</link>
 				</entry>
 			</line>
 		</bullet>
-		<bullet>
+		<bullet list-orientation="vert">
 			<title>lifts</title>
-			<line>maxes
-				<entry>squat
-					<value>325</value>
-					<date>February 2019</date>
+			<line>routines
+				<entry>prehab
+					<link>https://www.instagram.com/strengthcoachtherapy/?hl=en</link>
 				</entry>
+				<entry>resistance
+					<link>http://www.100swimmingworkouts.com/</link>
+				</entry>
+				<entry>vert
+					<link>http://www.dunkcalculator.com/</link>
+				</entry>
+				<entry>gains
+					<link>https://www.crossfit.com</link>
+				</entry>
+			</line>
+			<line>maxes
 				<entry>clean
-					<value>225</value>
+					<value>225#</value>
 					<date>December 2016</date>
 				</entry>
+				<entry>squat
+					<value>325#</value>
+					<date>February 2019</date>
+				</entry>
+				<entry>bench
+					<value>235#</value>
+					<date>April 2019</date>
+				</entry>
 				<entry>deadlift
-					<value>405</value>
-					<date>November 2016</date>
+					<value>435#</value>
+					<date>April 2019</date>
 				</entry>
 			</line>
 		</bullet>
-		<bullet>
+		<bullet list-orientation="vert">
 			<title>runs</title>
-			<line>workouts
-				<entry>Nike Run Club
+			<line>routes
+				<entry>Nike Run Club</entry>
+				<entry>Mission Trails
+					<link>https://mtrp.org/</link>
+				</entry>
+				<entry>Fiesta Island
+					<link>https://rootsrated.com/san-diego-ca/road-running/fiesta-island-road-running</link>
 				</entry>
 			</line>
 			<line>records
@@ -114,31 +220,44 @@
 					<value>2:08:12</value>
 					<date>November 2018</date>
 				</entry>
-				<entry>5K
-					<value>20:59</value>
-					<date>November 2001</date>
-				</entry>
 			</line>
 		</bullet>
-		<bullet>
+		<bullet list-orientation="vert">
 			<title>trips</title>
 			<!-- camping, touring, visiting -->
 		</bullet>
-		<bullet>
-			<title>more</title>
-				<!-- hoops: courts, arenas. games: poker, settlers, evolution. beach: blading, windsurfing. food: recipes, whiskey -->
+		<bullet list-orientation="horiz">
+			<title>games</title>
+				<line>chess
+					<link>https://www.chess.com/</link>
+				</line>
+				<line>backgammon
+					<link>http://www.bkgm.com/rules.html</link>
+				</line>
+				<line>yahtzee
+					<link>https://cardgames.io/yahtzee/</link>
+				</line>
+				<line>the fued
+					<link>https://familyfeudhelper.wordpress.com/category/game-questions/</link>
+				</line>
+				<line>poker
+					<link>https://www.merriam-webster.com/dictionary/poker</link>
+				</line>
+				<line>cards
+					<link>https://bicyclecards.com/how-to-play/pitch/</link>
+				</line>
 		</bullet>
 	</section>
 	<section option="ideas">
-		<bullet>
+		<bullet list-orientation="vert">
 			<title>print</title>
 				<line>books
 					<!--use json for each book-->
 					<!--add a timer effect-->
-					<entry>reading
+					<entry>current
 						<link>https://en.wikipedia.org/wiki/Steppenwolf_(novel)</link>
 					</entry>
-					<entry>read
+					<entry>recent
 						<linkset>
 							<link>https://en.wikipedia.org/wiki/A_Brief_History_of_Seven_Killings</link>
 							<link>https://en.wikipedia.org/wiki/Hear_the_Wind_Sing</link>
@@ -155,16 +274,29 @@
 					</entry>
 			</line>
 		</bullet>
-		<bullet>
+		<bullet list-orientation="vert">
 			<title>tech</title>
-			<line>stacks
-				<!-- R, M, C#, Wolfram, all of my coding bookmarks -->
-				<!-- things i know vs. things i am tracking (FHIR, NLP)-->
+			<line>pop
+				<entry>Wired
+					<link>https://www.wired.com/category/ideas/</link>
+				</entry>
+				<entry>Scientific American
+						<link>https://scientificamerican.com/sustainability/</link>
+					</entry>
 			</line>
-			<line>refs
+			<line>trade
+				<entry>R-bloggers
+					<link>https://www.r-bloggers.com/</link>
+				</entry>
+				<entry>KDnuggets
+					<link>https://www.kdnuggets.com/</link>
+				</entry>
+				<entry>HIStalk
+					<link>https://histalk2.com/</link>
+				</entry>
 			</line>
 		</bullet>
-		<bullet>
+		<bullet list-orientation="vert">
 			<title>law</title>
 			<line>theory
 				<entry>liberalism

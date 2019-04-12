@@ -7,7 +7,7 @@
 //  and the appropriate menu options load
 function jBounceUp() {
 
-	/* paddingTop effects are needed to seamlessly switch the header element from absoute to static position. */
+	/* paddingTop effects are needed to seamlessly switch the header element from absoute to static position */
 	/* without proper padding, the header will have a little hitch at the end of its animation */
 	/* paddingTop here should equal (height of the header element)+2*(body's top margin)+2*(desired padding after animation) */
 	/* building variables to convert existing css variables into JS so we can get this padding value dynamically... */
