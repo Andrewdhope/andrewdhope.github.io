@@ -16,6 +16,7 @@ body {
 	margin-right: 24px;
 	min-height: calc(100vh - var(--body-margin-top) - var(--body-margin-bottom));
 	font-family: Ubuntu, Courier;
+	font-size: large;
 	background-color: green;
 }
 
@@ -78,7 +79,7 @@ a:hover {
 section#content {
 	width: 75%;
 	float: left;
-	padding-bottom: 20px;
+	padding-bottom: 50px;
 	box-sizing: border-box;
 	background-color: green;
 	color: #cccccc;
@@ -92,7 +93,7 @@ section#content.border {
 nav#menu {
 	width: 25%;
 	float: right;
-	padding-bottom: 5px;
+	padding-bottom: 10px;
 	box-sizing: border-box;
 	background-color: green;
 	color: #cccccc;
@@ -254,7 +255,7 @@ footer {
 	height: var(--footer-height);
 	margin-top: 12px;
 	text-align: right;
-	font-size: x-small;
+	font-size: small;
 	font-family: ubuntu, courier;
 	color: #ccc;
 }
