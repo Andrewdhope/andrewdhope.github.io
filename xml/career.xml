@@ -5,7 +5,10 @@
 		<bullet list-orientation="vert">
 			<title>design</title>
 			<line>philosophy
-				<entry>usability heuristics
+				<entry>iteration
+					<link>https://www.designcouncil.org.uk/news-opinion/design-process-what-double-diamond</link>
+				</entry>
+				<entry>heuristics
 					<link>https://www.nngroup.com/articles/ten-usability-heuristics/</link>
 				</entry>
 			</line>
