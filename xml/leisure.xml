@@ -20,7 +20,7 @@
 			</line>
 			<line>food
 				<entry>dine
-					<link>https://www.pacificsandiego.com/eat-drink-puff/restaurants/</link>
+					<link>https://www.pacificsandiego.com/eat-drink/restaurants/</link>
 				</entry>
 				<entry>dram
 					<link>http://www.allthingswhisky.com/</link>
@@ -313,10 +313,7 @@
 			</line>
 			<line>policy
 				<entry>apportionment
-					<linkset>
-						<link>https://thirty-thousand.org/</link>
 						<link>https://www.nytimes.com/interactive/2018/11/09/opinion/expanded-house-representatives-size.html</link>
-					</linkset>
 				</entry>
 			</line>
 		</bullet>
