@@ -45,7 +45,6 @@
 				<entry>interfaces
 					<linkset>
 						<link>http://www.json.org/</link>
-						<link>https://cran.r-project.org/web/packages/rjson/index.html</link>
 						<link>https://www.hl7.org/fhir/summary.html</link>
 					</linkset>
 				</entry>
