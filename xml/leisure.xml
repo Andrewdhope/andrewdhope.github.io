@@ -114,9 +114,9 @@
 	</section>
 	<section option="activity">
 		<bullet list-orientation="vert">
-			<title>maps</title>
+			<title>trails</title>
 			<line>peaks
-				<entry>trails
+				<entry>maps
 					<link>https://www.alltrails.com</link>
 				</entry>
 				<entry>local
