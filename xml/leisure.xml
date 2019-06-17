@@ -257,13 +257,13 @@
 					<!--use json for each book-->
 					<!--add a timer effect-->
 					<entry>current
-						<link>https://en.wikipedia.org/wiki/Steppenwolf_(novel)</link>
+						<link>https://www.worldcat.org/title/midnight-rising-john-brown-and-the-raid-that-sparked-the-civil-war/oclc/697267337</link>
 					</entry>
 					<entry>recent
 						<linkset>
+							<link>https://en.wikipedia.org/wiki/The_Broom_of_the_System</link>
+							<link>https://en.wikipedia.org/wiki/Steppenwolf_(novel)</link>
 							<link>https://en.wikipedia.org/wiki/A_Brief_History_of_Seven_Killings</link>
-							<link>https://en.wikipedia.org/wiki/Hear_the_Wind_Sing</link>
-							<link>https://en.wikipedia.org/wiki/Chronicles:_Volume_One</link>
 						</linkset>
 					</entry>
 				</line>
