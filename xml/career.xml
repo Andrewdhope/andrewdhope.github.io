@@ -147,6 +147,14 @@
 	<section option="projects">
 		<bullet list-orientation="vert">
 			<title>healthcare</title>
+			<line>Hartford HealthCare
+				<entry>enterprise implementation
+					<role>technical coordinator</role>
+					<role>support lead</role>
+					<role>vendor architect</role>
+					<link>https://hartfordhealthcare.org/about-us/careconnect/epic-electronic-health-record</link>
+				</entry>
+			</line>
 			<line>Partners HealthCare
 				<entry>patient mobile application
 					<role>design analyst</role>
@@ -155,14 +163,6 @@
 				<entry>patient reported outcome measures
 					<role>application engineer</role>
 					<link>https://catalyst.nejm.org/implementing-proms-patient-reported-outcome-measures/</link>
-				</entry>
-			</line>
-			<line>Hartford HealthCare
-				<entry>enterprise implementation
-					<role>technical coordinator</role>
-					<role>support lead</role>
-					<role>vendor architect</role>
-					<link>https://hartfordhealthcare.org/about-us/careconnect/epic-electronic-health-record</link>
 				</entry>
 			</line>
 			<line>Stanford Health Care
