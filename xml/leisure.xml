@@ -6,7 +6,7 @@
 			<title>sites</title>
 			<line>news
 				<entry>Twitter
-					<link>https://twitter.com/</link> <!-- https://twitter.com/atul/lists/tech-bloggers-reporters -->
+					<link>https://twitter.com/</link>
 				</entry>
 				<entry>Five Thirty Eight
 					<link>https://fivethirtyeight.com/</link>
@@ -82,6 +82,9 @@
 							<link>https://www.youtube.com/watch?v=KqFNbCcyFkk</link>
 						</linkset>
 					</entry>
+					<entry>Jeopardy!
+						<link>http://j-archive.com/</link>
+					</entry>
 				</line>
 		</bullet>
 		<bullet list-orientation="vert">
@@ -90,8 +93,8 @@
 				<entry>Hardcore History
 					<link>https://www.dancarlin.com/</link>
 				</entry>
-				<entry>History of Rome
-					<link>https://thehistoryofrome.typepad.com/</link>
+				<entry>Revolutions
+					<link>https://www.revolutionspodcast.com/</link>
 				</entry>
 			</line>
 			<line>sports
@@ -144,6 +147,9 @@
 			</line>
 			<line>stats
 				<link>https://www.basketball-reference.com/</link>
+			</line>
+			<line>sheets
+				<link>https://www.spotrac.com/</link>
 			</line>
 			<line>courts
 				<link>https://www.instagram.com/hypecourts/?hl=en</link>
@@ -255,15 +261,14 @@
 			<title>print</title>
 				<line>books
 					<!--use json for each book-->
-					<!--add a timer effect-->
 					<entry>current
-						<link>https://en.wikipedia.org/wiki/Black_Leopard,_Red_Wolf</link>
+						<link>https://en.wikipedia.org/wiki/The_Grapes_of_Wrath</link>
 					</entry>
 					<entry>recent
 						<linkset>
+							<link>https://en.wikipedia.org/wiki/Bury_My_Heart_at_Wounded_Knee</link>
+							<link>https://en.wikipedia.org/wiki/The_Long_Valley</link>
 							<link>https://en.wikipedia.org/wiki/One_Hundred_Years_of_Solitude</link>
-							<link>https://www.worldcat.org/title/midnight-rising-john-brown-and-the-raid-that-sparked-the-civil-war/oclc/697267337</link>
-							<link>https://en.wikipedia.org/wiki/Steppenwolf_(novel)</link>
 						</linkset>
 					</entry>
 				</line>
