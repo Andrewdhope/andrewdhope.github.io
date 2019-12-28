@@ -54,7 +54,7 @@
 					<link>https://as.sdsu.edu/viejas_arena/events/</link>
 				</entry>
 				<entry>Humphreys
-					<link>http://humphreysconcerts.com/schedule.cfm</link>
+					<link>http://humphreysconcerts.com/schedule.cfm#nextshow</link>
 				</entry>
 				<entry>The Majestic
 					<link>http://majesticmadison.com/</link>
@@ -81,9 +81,6 @@
 							<link>https://twitter.com/SimpsonsQOTD</link>
 							<link>https://www.youtube.com/watch?v=KqFNbCcyFkk</link>
 						</linkset>
-					</entry>
-					<entry>Jeopardy!
-						<link>http://j-archive.com/</link>
 					</entry>
 				</line>
 		</bullet>
@@ -230,10 +227,6 @@
 				</entry>
 			</line>
 		</bullet>
-		<bullet list-orientation="vert">
-			<title>trips</title>
-			<!-- camping, touring, visiting -->
-		</bullet>
 		<bullet list-orientation="horiz">
 			<title>games</title>
 				<line>chess
@@ -254,6 +247,10 @@
 				<line>cards
 					<link>https://bicyclecards.com/how-to-play/pitch/</link>
 				</line>
+		</bullet>
+		<bullet list-orientation="vert">
+			<title>chords</title>
+			<!-- link to a directory, or a github repo -->
 		</bullet>
 	</section>
 	<section option="ideas">
