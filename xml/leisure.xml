@@ -170,6 +170,9 @@
 				<entry>Grizzlies
 					<link>https://www.basketball-reference.com/boxscores/201811270MEM.html</link>
 				</entry>
+				<entry>Kings
+					<link>https://www.basketball-reference.com/boxscores/202001060SAC.html</link>
+				</entry>
 			</line>
 		</bullet>
 		<bullet list-orientation="vert">
@@ -250,7 +253,7 @@
 		</bullet>
 		<bullet list-orientation="vert">
 			<title>chords</title>
-			<!-- link to a directory, or a github repo -->
+			<!-- link to a directory, or a repo -->
 		</bullet>
 	</section>
 	<section option="ideas">
