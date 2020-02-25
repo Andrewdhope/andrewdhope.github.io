@@ -257,18 +257,17 @@
 		</bullet>
 	</section>
 	<section option="ideas">
-		<bullet list-orientation="vert">
+	<bullet list-orientation="vert">
 			<title>print</title>
 				<line>books
-					<!--use json for each book-->
 					<entry>current
-						<link>https://en.wikipedia.org/wiki/The_Grapes_of_Wrath</link>
+						<link>https://en.wikipedia.org/wiki/Democracy_in_America</link>
 					</entry>
 					<entry>recent
 						<linkset>
-							<link>https://en.wikipedia.org/wiki/Bury_My_Heart_at_Wounded_Knee</link>
-							<link>https://en.wikipedia.org/wiki/The_Long_Valley</link>
-							<link>https://en.wikipedia.org/wiki/One_Hundred_Years_of_Solitude</link>
+							<link>https://en.wikipedia.org/wiki/The_Count_of_Monte_Cristo</link>
+							<link>https://en.wikipedia.org/wiki/Eric_D._Walrond</link>
+							<link>https://en.wikipedia.org/wiki/The_Grapes_of_Wrath</link>
 						</linkset>
 					</entry>
 				</line>
@@ -276,38 +275,30 @@
 					<entry>Longreads
 						<link>https://longreads.com/</link>
 					</entry>
+					<entry>Wired
+						<link>https://www.wired.com/category/ideas/</link>
+					</entry>
 					<entry>The Athletic
 						<link>https://theathletic.com/</link>
 					</entry>
-					<entry>ProPublica
-						<link>https://www.propublica.org/</link>
-					</entry>
-			</line>
+				</line>
 		</bullet>
 		<bullet list-orientation="vert">
 			<title>tech</title>
-			<line>pop
-				<entry>Wired
-					<link>https://www.wired.com/category/ideas/</link>
-				</entry>
-				<entry>Scientific American
-						<link>https://scientificamerican.com/sustainability/</link>
+				<line>trade
+					<entry>KDnuggets
+						<link>https://www.kdnuggets.com/</link>
 					</entry>
-			</line>
-			<line>trade
-				<entry>R-bloggers
-					<link>https://www.r-bloggers.com/</link>
-				</entry>
-				<entry>KDnuggets
-					<link>https://www.kdnuggets.com/</link>
-				</entry>
-				<entry>Health Affairs
-					<link>https://www.healthaffairs.org</link>
-				</entry>
-				<entry>HIStalk
-					<link>https://histalk2.com/</link>
-				</entry>
-			</line>
+					<entry>R-bloggers
+						<link>https://www.r-bloggers.com/</link>
+					</entry>
+					<entry>Health Affairs
+						<link>https://www.healthaffairs.org</link>
+					</entry>
+					<entry>HIStalk
+						<link>https://histalk2.com/</link>
+					</entry>
+				</line>
 		</bullet>
 		<bullet list-orientation="vert">
 			<title>law</title>
