@@ -63,7 +63,6 @@
 		</bullet>
 		<bullet list-orientation="vert">
 			<title>shows</title>
-				<!-- figure out some content for the links -->
 				<line>modern
 					<entry>Better Call Saul
 						<link>https://www.imdb.com/title/tt3032476/plotsummary?ref_=tt_stry_pl</link>
@@ -147,6 +146,10 @@
 			</line>
 			<line>sheets
 				<link>https://www.spotrac.com/</link>
+			</line>
+			<!-- new -->
+			<line>search
+				<link>https://chrome.google.com/webstore/category/extensions?hl=en</link>
 			</line>
 			<line>courts
 				<link>https://www.instagram.com/hypecourts/?hl=en</link>
@@ -251,13 +254,9 @@
 					<link>https://bicyclecards.com/how-to-play/pitch/</link>
 				</line>
 		</bullet>
-		<bullet list-orientation="vert">
-			<title>chords</title>
-			<!-- link to a directory, or a repo -->
-		</bullet>
 	</section>
 	<section option="ideas">
-	<bullet list-orientation="vert">
+		<bullet list-orientation="vert">
 			<title>print</title>
 				<line>books
 					<entry>current
@@ -272,11 +271,13 @@
 					</entry>
 				</line>
 				<line>pages
-					<entry>Longreads
-						<link>https://longreads.com/</link>
-					</entry>
 					<entry>Wired
 						<link>https://www.wired.com/category/ideas/</link>
+					</entry><entry>Longreads
+						<link>https://longreads.com/</link>
+					</entry>
+					<entry>The Atlantic
+						<link>https://theatlantic.com/</link>
 					</entry>
 					<entry>The Athletic
 						<link>https://theathletic.com/</link>
@@ -285,6 +286,23 @@
 		</bullet>
 		<bullet list-orientation="vert">
 			<title>tech</title>
+				<line>science
+					<entry>Climate
+						<link>https://nca2018.globalchange.gov/</link>
+					</entry>
+					<entry>Geology
+						<link>https://geology.com/</link>
+					</entry>
+					<entry>Physics
+						<link>https://www.wolframphysics.org/</link>
+					</entry>
+					<entry>Sustainability
+						<link>https://www.scientificamerican.com/sustainability/</link>
+					</entry>
+					<entry>Research
+						<link>https://explorable.com/</link>
+					</entry>
+				</line>
 				<line>trade
 					<entry>KDnuggets
 						<link>https://www.kdnuggets.com/</link>
@@ -295,8 +313,8 @@
 					<entry>Health Affairs
 						<link>https://www.healthaffairs.org</link>
 					</entry>
-					<entry>HIStalk
-						<link>https://histalk2.com/</link>
+					<entry>Digital Medicine
+						<link>https://www.nature.com/npjdigitalmed/</link>
 					</entry>
 				</line>
 		</bullet>
@@ -316,6 +334,9 @@
 						<link>https://www.nytimes.com/interactive/2018/11/09/opinion/expanded-house-representatives-size.html</link>
 						<link>https://en.wikipedia.org/wiki/Congressional_Apportionment_Amendment</link>
 					</linkset>
+				</entry>
+				<entry>privacy
+					<link>https://eff.org/</link>
 				</entry>
 			</line>
 		</bullet>
