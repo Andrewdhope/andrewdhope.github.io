@@ -200,6 +200,10 @@ h2.empty, h3.empty` {
 	padding-left: 0px;
 }
 
+#arenas {
+	white-space: nowrap; /* don't wrap the dropdown arrow */
+}
+
 .entry a, .entry span {
 	padding-right: 1%;
 }
