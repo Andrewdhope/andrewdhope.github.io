@@ -40,6 +40,9 @@
 				<entry>MapReduce
 					<link>https://hadoop.apache.org/docs/r1.2.1/mapred_tutorial.html</link>
 				</entry>
+				<entry>ArcGIS
+					<link>https://andrewdhope.maps.arcgis.com/home/index.html</link>
+				</entry>				
 			</line>
 			<line>payload
 				<entry>pipelines
@@ -237,7 +240,6 @@
 		</bullet>
 		<bullet list-orientation="vert">
 			<title>leadership</title>
-				<!-- dig through and commit quotes (reviews.txt) -->
 				<line>structured</line>
 				<line>empowering</line>
 				<line>adaptable</line>
