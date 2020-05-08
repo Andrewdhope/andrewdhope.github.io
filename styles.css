@@ -1,8 +1,13 @@
+
 :root {
-	--body-margin-top: 24px;
-	--body-margin-bottom: 12px;
-	--header-height: 18px;
-	--footer-height: 12px;
+	--body-margin-top: 2vh;
+	--body-margin-bottom: 2vh;
+	--header-height: 1.5vh;
+	--header-padding-top: 1vh;
+	--header-padding-bottom: 2vh;
+	--footer-height: 2vh;
+	--footer-margin: 2vh;
+	/* update IE workarounds below */
 }
 
 html {
@@ -12,18 +17,26 @@ html {
 body {
 	margin-top: var(--body-margin-top);
 	margin-bottom: var(--body-margin-bottom);
-	margin-left: 24px;
-	margin-right: 24px;
+	margin-left: 2vw;
+	margin-right: 2vw;
 	min-height: calc(100vh - var(--body-margin-top) - var(--body-margin-bottom));
-	font-family: Ubuntu, Courier;
 	font-size: large;
+	font-family: Ubuntu, Courier;
 	background-color: green;
+}
+/* IE10+ workaround */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	body { margin-top: 2vh; margin-bottom: 2vh; min-height:96vh; }
 }
 
 /* --- HEADER --- */
 
 header {
 	height: var(--header-height);
+}
+/* IE10+ workaround */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	header { min-height:1.5vh; }
 }
 
 header.up {
@@ -79,7 +92,7 @@ a:hover {
 section#content {
 	width: 75%;
 	float: left;
-	padding-bottom: 50px;
+	padding-bottom: 4%;
 	box-sizing: border-box;
 	background-color: green;
 	color: #cccccc;
@@ -93,7 +106,7 @@ section#content.border {
 nav#menu {
 	width: 25%;
 	float: right;
-	padding-bottom: 10px;
+	padding-bottom: 1%;
 	box-sizing: border-box;
 	background-color: green;
 	color: #cccccc;
@@ -106,7 +119,7 @@ nav#menu.border {
 
 nav#menu ul {
 	list-style-type: none;
-	padding-left: 20px;
+	padding-left: 10%;
 }
 
 nav#menu li:before {
@@ -123,11 +136,23 @@ nav#menu li:before {
 }
 
 .group {
-	/* top and bottom margins on the body + total height of header with padding + total height of footer with margin */
-	min-height: calc(100vh - 98px);
+	/* 100vh - top and bottom margins on the body - total height of header after animated padding - total height of footer with margin) */
+	min-height: calc(100vh - var(--body-margin-top) - var(--body-margin-bottom) - var(--header-height) - var(--header-padding-top) - var(--header-padding-bottom) - var(--footer-height) - var(--footer-margin));
+}
+/* IE10+ workaround */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.group { min-height:87.5vh; }
 }
 
 /* collapsible headers */
+
+h2 {
+	font-size: calc(1rem + 1vw);
+}
+
+h3 {
+	font-size: calc(1rem + 0.5vw); 
+}
 
 h2, h3 {
 	display: inline-block;
@@ -182,7 +207,7 @@ h2.empty, h3.empty` {
 	padding-top: 1px;
 	padding-bottom: 1px;
 	padding-left: 5%;
-	padding-right: 23px; /* originally for the arenas dropdown */
+	padding-right: 1%; /* originally for the arenas dropdown */
 }
 
 .entryset {
@@ -252,16 +277,24 @@ a.multi-entry {
 	text-decoration: underline;
 }
 
+sup {
+	white-space: nowrap; 
+}
+
 /* --- FOOTER --- */
 
 footer {
 	width: 100%;
 	height: var(--footer-height);
-	margin-top: 12px;
+	margin-top: var(--footer-margin);
 	text-align: right;
 	font-size: small;
 	font-family: ubuntu, courier;
 	color: #ccc;
+}
+/* IE10+ workaround */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	footer { height:2vh; margin-top: 2vh;}
 }
 
 footer p {
@@ -276,4 +309,31 @@ footer p.footlinks {
 a.ga, a.ga:hover {
 	text-decoration: none;
 	cursor: text;
+}
+
+/* Responsive overrides */
+
+@media (max-width: 1024px) {
+	footer p.copyright {visibility: hidden;} 
+}
+
+@media (max-width: 600px) {
+	nav#menu {width: 35%;}
+	section#content {width: 65%;}
+	nav#menu ul {padding-left: 0%;}
+	.bullet {padding-left: 7.5%;}
+	.lineset {padding-left: 5%;}
+	.line {width: max-content;}
+	.line {padding-left: 2.5%;}
+	.entryset {width: max-content;}
+	.entryset {padding-left: 7.5%;}
+	.entry {width: max-content;}
+	.entry {padding-left: 0%;}
+	.entry {font-size: small;}
+	.entry {white-space: nowrap;}
+}
+
+@media (max-width: 600px) {
+	span.material-icons {font-size: 12px;}
+	.bullet span.material-icons {vertical-align: initial;}
 }

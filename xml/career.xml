@@ -42,7 +42,7 @@
 				</entry>
 				<entry>ArcGIS
 					<link>https://andrewdhope.maps.arcgis.com/home/index.html</link>
-				</entry>				
+				</entry>
 			</line>
 			<line>payload
 				<entry>pipelines
@@ -168,7 +168,7 @@
 					<role>design analyst</role>
 					<link>https://itunes.apple.com/us/app/partners-patient-gateway-mobile/id1175078347?mt=8</link>
 				</entry>
-				<entry>patient reported outcome measures
+				<entry>patient reported outcomes
 					<role>application engineer</role>
 					<link>https://catalyst.nejm.org/implementing-proms-patient-reported-outcome-measures/</link>
 				</entry>

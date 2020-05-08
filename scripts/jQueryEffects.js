@@ -17,9 +17,11 @@ function jBounceUp() {
 	var styles = window.getComputedStyle(document.documentElement); // get all styles
 	var headerheight = styles.getPropertyValue('--header-height'); // convert css variable to js
 	var bodymargintop = styles.getPropertyValue('--body-margin-top'); // convert css variable to js
-	var totalpaddingint = parseInt(headerheight) + 2*parseInt(bodymargintop) + 20; // convert to integers and add 20
-	var totalpaddingpx = totalpaddingint+"px"; // convert to string and append px
-	var animatePadding = {paddingTop: totalpaddingpx}; // make a jQuery PlainObject for the animate function
+	var headerpaddingtop = styles.getPropertyValue('--header-padding-top'); // convert css variable to js
+	var headerpaddingbottom = styles.getPropertyValue('--header-padding-bottom'); // convert css variable to js
+	var totalpaddingint = parseInt(headerheight) + 2*parseInt(bodymargintop) + parseInt(headerpaddingtop) + parseInt(headerpaddingbottom); // convert to integers and sum vh values. 
+	var totalpaddingvh = totalpaddingint+"vh"; // convert to string and append vh
+	var animatePadding = {paddingTop: totalpaddingvh}; // make a jQuery PlainObject for the animate function
 
 	// if the header is already up, just load the menu
 	if (document.getElementsByTagName("header")[0].classList.contains("up")) {
@@ -31,9 +33,7 @@ function jBounceUp() {
 			// *sigh* IE workaround
 			if (window.ActiveXObject !== undefined)
 			{
-				$("header").animate({paddingTop: "62px"}, "slow"); // need to hardcode the paddingTop value for IE
-				// for some reason the 'magic value' for IE is different than other browsers
-				// most browsers succeed with 86px (see formula above), but it seems that IE requires 24 fewer pixels...?
+				$("header").animate({paddingTop: "6.5vh"}, "slow"); // need to hardcode the paddingTop value for IE
 				// ...one problem with hardcoding is you can't really trace why its set that way
 			}
 			else // better browsers
@@ -45,7 +45,7 @@ function jBounceUp() {
 			$("header").animate({bottom: '100%'}, "slow", function() {
 			
 				/* paddingBottom added just to give the next divs some breathing room. */
-				$("header").removeClass("down").css({"paddingTop": "10px", "paddingBottom": "10px"})
+				$("header").removeClass("down").css({"paddingTop": headerpaddingtop, "paddingBottom": headerpaddingbottom}) // headerpaddingtotal 
 				
 				$("footer p").slideDown("100") /* also deploy the footer */
 			});	
