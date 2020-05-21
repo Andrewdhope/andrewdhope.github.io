@@ -1,46 +1,65 @@
+
 :root {
-	--body-margin-top: 24px;
-	--body-margin-bottom: 12px;
-	--header-height: 18px;
-	--footer-height: 12px;
+	--body-margin-top: 2vh;
+	--body-margin-bottom: 2vh;
+	--header-height: 10vh; 
+	--header-padding-top: 40vh;
+	--header-padding-bottom-vh: 1.5vh;
+	--header-padding-bottom-vw: 1.5vw;
+	--title-padding-bottom: 1vh;
+	--footer-height: 2vh;
+	--footer-margin: 2vh;
+	/* update IE workarounds below */
 }
 
-html {
-	height: 100%;
-}
-
-body {
+body {	
 	margin-top: var(--body-margin-top);
 	margin-bottom: var(--body-margin-bottom);
-	margin-left: 24px;
-	margin-right: 24px;
-	min-height: calc(100vh - var(--body-margin-top) - var(--body-margin-bottom));
+	margin-left: 2vw;
+	margin-right: 2vw;
+	font-size: calc(1rem + 0.25vw);
 	font-family: Ubuntu, Courier;
-	font-size: large;
 	background-color: green;
+}
+/* IE10+ workaround */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	body { margin-top: 2vh; margin-bottom: 2vh; }
+}
+
+#wrapper {
+	min-height: calc(100vh - 2*var(--body-margin-top) - 2*var(--body-margin-bottom));
+	width: max-content;
+	margin: 0 auto;
+}
+/* IE10+ workaround */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	#wrapper { min-height: 92vh; } 
 }
 
 /* --- HEADER --- */
 
 header {
-	height: var(--header-height);
-}
-
-header.up {
-	padding-top: 0px;
-	padding-bottom: 0px;
-}
-
-header.down {
-	position: absolute;
-	bottom: 50%;
-	right: 50%;
-	transform: translateX(50%) translateY(50%);
-	/* standard method to center an element with absolute position */
-}
-
-header span {
 	color: #cccccc;
+	padding-top: var(--header-padding-top);
+	padding-bottom: calc(1rem + var(--header-padding-bottom-vh) + var(--header-padding-bottom-vw));
+}
+
+/* IE10+ workaround */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	/* abandon the animation for IE, just start with the header up */
+	/* give extra padding-bottom for IE, better spread than squished */
+	header { padding-top: 0vh; padding-bottom: calc(2.5vh + 2.5vw); } 
+}
+
+
+.title {	
+	font-size: calc(1rem + 3vw);
+	letter-spacing: 1.5vw;
+	padding-bottom: var(--title-padding-bottom)
+}
+/* IE10+ workaround */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.title { padding-bottom: 1vh; }
 }
 
 /* split class to hold styles for the main branching option */
@@ -48,9 +67,19 @@ header span {
 	color: #cccccc;
 }
 
-.centered { 
-	text-align: center;
-	height: inherit;
+.centered {
+	display: inline;
+	float: right;
+	padding-right: 1.5vw;
+}
+/* IE10+ workaround */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.centered { padding-right: 0vw; }
+}
+
+
+.subtitle {
+	float: left;
 }
 
 /* --- MENU --- */
@@ -79,7 +108,7 @@ a:hover {
 section#content {
 	width: 75%;
 	float: left;
-	padding-bottom: 50px;
+	padding-bottom: 4%;
 	box-sizing: border-box;
 	background-color: green;
 	color: #cccccc;
@@ -93,7 +122,7 @@ section#content.border {
 nav#menu {
 	width: 25%;
 	float: right;
-	padding-bottom: 10px;
+	padding-bottom: 1%;
 	box-sizing: border-box;
 	background-color: green;
 	color: #cccccc;
@@ -106,7 +135,7 @@ nav#menu.border {
 
 nav#menu ul {
 	list-style-type: none;
-	padding-left: 20px;
+	padding-left: 10%;
 }
 
 nav#menu li:before {
@@ -122,12 +151,15 @@ nav#menu li:before {
 	clear: both;
 }
 
-.group {
-	/* top and bottom margins on the body + total height of header with padding + total height of footer with margin */
-	min-height: calc(100vh - 98px);
+/* collapsible headers */
+
+h2 {
+	font-size: calc(1rem + 1vw);
 }
 
-/* collapsible headers */
+h3 {
+	font-size: calc(1rem + 0.5vw); 
+}
 
 h2, h3 {
 	display: inline-block;
@@ -158,11 +190,11 @@ h2.empty, h3.empty` {
 
 /* expand_more and expand_less icons */
 
-.bullet span.material-icons {
+.bullet .material-icons {
 	vertical-align: text-bottom;
 }
 
-.line span.material-icons {
+.line .material-icons {
 	vertical-align: middle;
 }
 
@@ -182,7 +214,7 @@ h2.empty, h3.empty` {
 	padding-top: 1px;
 	padding-bottom: 1px;
 	padding-left: 5%;
-	padding-right: 23px; /* originally for the arenas dropdown */
+	padding-right: 1%; /* originally for the arenas dropdown */
 }
 
 .entryset {
@@ -200,11 +232,15 @@ h2.empty, h3.empty` {
 	padding-left: 0px;
 }
 
+#arenas {
+	white-space: nowrap; /* don't wrap the dropdown arrow */
+}
+
 .entry a, .entry span {
 	padding-right: 1%;
 }
 
-span.role {
+.role {
 	padding-left: 1%;
 	border-left-width: 1px;
 	border-left-style: dashed;
@@ -248,16 +284,25 @@ a.multi-entry {
 	text-decoration: underline;
 }
 
+sup {
+	white-space: nowrap; 
+}
+
 /* --- FOOTER --- */
 
 footer {
 	width: 100%;
 	height: var(--footer-height);
-	margin-top: 12px;
+	margin-top: var(--footer-margin);
 	text-align: right;
-	font-size: small;
+	font-size: calc(1rem - 0.25vw);
 	font-family: ubuntu, courier;
 	color: #ccc;
+}
+
+/* IE10+ workaround */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	footer { height:2vh; margin-top: 2vh;}
 }
 
 footer p {
@@ -272,4 +317,39 @@ footer p.footlinks {
 a.ga, a.ga:hover {
 	text-decoration: none;
 	cursor: text;
+}
+
+/* Responsive overrides */
+
+@media (max-width: 850px) {
+	.down .subtitle {display: none;}
+	.role { display: block; padding-left: 2.5%; margin-top: 2.5%;}
+	.role-wrap .role { display: block; border-left-width: 1px; border-left-style: dashed; padding-left: 2.5%; margin-top: 2.5%; margin-bottom: 2.5%;}
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 850px) {
+	/* dont hide the subtitle in IE, since the header will start on top */
+	.down .subtitle {display: block;}
+}
+
+@media (max-width: 600px) {
+	nav#menu {width: 35%;}
+	section#content {width: 65%;}
+	nav#menu ul {padding-left: 0%; margin-block-start: auto;}
+	.bullet {padding-left: 7.5%;}
+	.lineset {padding-left: 5%;}
+	.line {width: max-content;}
+	.line {padding-left: 2.5%;}
+	.entryset {width: max-content;}
+	.entryset {padding-left: 7.5%;}
+	.entry {width: max-content;}
+	.entry {padding-left: 0%;}
+	.entry {font-size: calc(1rem - 0.5vw);}
+	.entry {white-space: nowrap; padding-bottom: 1vh;}
+	.subtitle { font-size: calc(1rem - 0.5vw); vertical-align: top;}
+	.centered { font-size: calc(1rem - 0.5vw);}
+	.material-icons {font-size: 12px;}
+	.bullet .material-icons {vertical-align: middle;}
+	footer { font-size: calc(1rem - 0.5vw);}
+	footer p.copyright {visibility: hidden;} 
 }
