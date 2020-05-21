@@ -26,7 +26,7 @@ function jBounceUp() {
 	} else {
 	
 		$("header").addClass("up");
-		
+
 		// *sigh* IE workaround
 		if (window.ActiveXObject !== undefined)
 		{

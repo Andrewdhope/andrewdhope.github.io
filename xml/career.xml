@@ -14,7 +14,7 @@
 			</line>
 			<line>objectives
 				<entry>documented
-					<link>https://vita.had.co.nz/papers/tidy-data.pdf</link>
+					<link>https://www.range.co/blog/better-tech-specs</link>
 				</entry>
 				<entry>measurable
 					<link>https://kpi.org/KPI-Basics/Dashboarding-and-Analysis</link>
@@ -22,7 +22,7 @@
 			</line>
 			<line>innovation
 				<entry>computational
-					<link>https://www.wolframscience.com/nks/p27--how-do-simple-programs-behave/</link>
+					<link>https://www.wolframscience.com/nks/p30--how-do-simple-programs-behave/</link>
 				</entry>
 			</line>
 		</bullet>
@@ -30,7 +30,7 @@
 			<title>mining</title>
 			<line>structure
 				<entry>warehousing
-					<link>http://www.essai.rnu.tn/Ebook/Informatique/The%20Data%20Warehouse%20Toolkit,%203rd%20Edition.pdf</link>
+					<link>http://aatinegar.com/wp-content/uploads/2016/05/Kimball_The-Data-Warehouse-Toolkit-3rd-Edition.pdf</link>
 				</entry>
 			</line>
 			<line>extraction
@@ -40,6 +40,9 @@
 				<entry>MapReduce
 					<link>https://hadoop.apache.org/docs/r1.2.1/mapred_tutorial.html</link>
 				</entry>
+				<entry>ArcGIS
+					<link>https://andrewdhope.maps.arcgis.com/home/index.html</link>
+				</entry>
 			</line>
 			<line>payload
 				<entry>pipelines
@@ -47,7 +50,7 @@
 				</entry>
 				<entry>interfaces
 					<linkset>
-						<link>http://www.json.org/</link>
+						<link>https://www.json.org/</link>
 						<link>https://www.hl7.org/fhir/summary.html</link>
 					</linkset>
 				</entry>
@@ -56,10 +59,13 @@
 		<bullet list-orientation="vert">
 			<title>modeling</title>
 			<line>simulation
-				<entry>platform
-					<link>http://www.wolfram.com/language/uses/</link>
+				<entry>platforms
+					<linkset>
+						<link>https://www.wolfram.com/language/uses/</link>
+						<link>https://www.tidymodels.org/</link>
+					</linkset>
 				</entry>
-			</line>	
+			</line>
 			<line>forecasting
 				<entry>principles
 					<link>https://otexts.com/fpp2/</link>
@@ -117,7 +123,6 @@
 				<entry>Data Visualization Society
 					<link>https://www.datavisualizationsociety.com/</link>
 				</entry>
-				<!-- https://r-graphics.org/ -->
 			</line>
 		</bullet>
 		<bullet list-orientation="vert">
@@ -139,7 +144,10 @@
 			</line>
 			<line>presentation
 				<entry>HTML5
-					<link>https://css-tricks.com/</link>
+					<linkset>
+						<link>https://developer.mozilla.org/en-US/</link>
+						<link>https://css-tricks.com/</link>
+					</linkset>
 				</entry>
 			</line>
 		</bullet>
@@ -160,7 +168,7 @@
 					<role>design analyst</role>
 					<link>https://itunes.apple.com/us/app/partners-patient-gateway-mobile/id1175078347?mt=8</link>
 				</entry>
-				<entry>patient reported outcome measures
+				<entry>patient reported outcomes
 					<role>application engineer</role>
 					<link>https://catalyst.nejm.org/implementing-proms-patient-reported-outcome-measures/</link>
 				</entry>
@@ -186,21 +194,16 @@
 				</entry>
 				<entry>Lexington Medical Center
 					<role>regulatory reporting</role>
-					<link>http://www.lexmed.com/</link>
+					<link>https://www.lexmed.com/</link>
 				</entry>
 			</line>
 		</bullet>
 		<bullet list-orientation="vert">
 			<title>engineering</title>
-			<note></note>
 			<line>University of Pittsburgh
 				<entry>Bachelor of Science in Industrial Engineering
 					<detail>cum laude</detail>
 					<link>https://www.engineering.pitt.edu/Departments/Industrial/</link>
-				</entry>
-				<entry>Curtiss-Wright Electro-Mechanical Division
-					<role>Engineering co-op</role>
-					<link>https://www.cw-ems.com/emd/</link>
 				</entry>
 			</line>
 			<line>Johns Hopkins University
@@ -218,11 +221,16 @@
 						<link>https://data.world/andrewdhope</link>
 					</linkset>
 				</entry>
+				<entry>extensions
+					<linkset>
+						<link>https://chrome.google.com/webstore/detail/nba-salary-search/alkkhcmnofcbjloojjeghnpmjofpgifd</link>
+					</linkset>
+				</entry>
 				<entry>tutorials
 					<linkset>
 						<link>https://javascript.info</link>
 						<link>https://fsharp.org/about/index.html</link>
-						<link>http://opendatastructures.org</link>
+						<link>https://opendatastructures.org</link>
 					</linkset>
 				</entry>
 				<entry>showcase
@@ -232,7 +240,6 @@
 		</bullet>
 		<bullet list-orientation="vert">
 			<title>leadership</title>
-				<!-- dig through and commit quotes -->
 				<line>structured</line>
 				<line>empowering</line>
 				<line>adaptable</line>
