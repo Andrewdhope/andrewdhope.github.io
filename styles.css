@@ -320,6 +320,10 @@ a.ga, a.ga:hover {
 
 /* Responsive overrides */
 
+@media (min-width: 1680px) {
+	footer {font-size: 1rem;}
+}
+
 @media (max-width: 850px) {
 	.down .subtitle {display: none;}
 	.role { display: block; padding-left: 2.5%; margin-top: 2.5%;}
