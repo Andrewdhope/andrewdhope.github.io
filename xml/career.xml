@@ -251,7 +251,9 @@
 		</bullet>
 		<bullet list-orientation="vert">
 			<title>service</title>
-			<!-- https://www.handsonsandiego.org/ -->
+				<line>equity</line>
+				<line>education</line>
+				<line>environment</line>
 		</bullet>
 	</section>
 </content>
