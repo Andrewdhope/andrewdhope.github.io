@@ -40,9 +40,6 @@
 				<entry>MapReduce
 					<link>https://hadoop.apache.org/docs/r1.2.1/mapred_tutorial.html</link>
 				</entry>
-				<entry>ArcGIS
-					<link>https://andrewdhope.maps.arcgis.com/home/index.html</link>
-				</entry>
 			</line>
 			<line>payload
 				<entry>pipelines
@@ -51,7 +48,13 @@
 				<entry>interfaces
 					<linkset>
 						<link>https://www.json.org/</link>
-						<link>https://www.hl7.org/fhir/summary.html</link>
+						<link>https://www.hl7.org/fhir/</link>
+					</linkset>
+				</entry>
+				<entry>notebooks
+					<linkset>
+						<link>https://www.shinyapps.io/</link> <!-- update with apportionment project -->
+						<link>https://www.arcgis.com/home/index.html</link> <!-- https://andrewdhope.maps.arcgis.com/home/index.html -->
 					</linkset>
 				</entry>
 			</line>
@@ -108,6 +111,9 @@
 				<entry>The Elements of Statistical Learning
 					<link>https://web.stanford.edu/~hastie/Papers/ESLII.pdf</link>
 				</entry>
+				<entry>A Tutorial on Principal Component Analysis
+					<link>https://www.arxiv-vanity.com/papers/1404.1100/</link>
+				</entry>
 			</line>
 			<line>inference
 				<entry>Computer Age Statistical Inference
@@ -133,23 +139,32 @@
 				<entry>R
 					<link>https://swirlstats.com/</link>
 				</entry>
-			</line>
-			<line>scripting
-				<entry>M
-					<link>http://mumps.sourceforge.net/docs.html</link> <!-- F#? -->
+				<entry>T-SQL
+					<link>https://www.tsql.info/</link>
 				</entry>
 			</line>
 			<line>development
+				<entry>JavaScript
+					<link>https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference</link>
+				</entry>
 				<entry>C#
 					<link>https://docs.microsoft.com/en-us/dotnet/csharp/</link>
 				</entry>
 			</line>
+			<line>scripting
+				<entry>XML
+					<link>https://www.xmlvalidation.com/</link>
+				</entry>
+				<entry>M
+					<link>http://mumps.sourceforge.net/docs.html</link>
+				</entry>
+			</line>
 			<line>presentation
+				<entry>CSS3
+					<link>https://css-tricks.com/</link>
+				</entry>
 				<entry>HTML5
-					<linkset>
-						<link>https://css-tricks.com/</link>
-						<link>https://developer.mozilla.org/en-US/</link>
-					</linkset>
+					<link>https://www.w3schools.com/tags/ref_byfunc.asp</link>
 				</entry>
 			</line>
 		</bullet>
@@ -190,7 +205,7 @@
 				</entry>
 				<entry>University of California Davis Health
 					<role>telehealth</role>
-					<link>https://health.ucdavis.edu/cht/clinic/index.html</link>
+					<link>https://health.ucdavis.edu/medicalcenter/myucdavishealth/video-visits.html</link>
 				</entry>
 				<entry>Baptist Memorial Health Care
 					<role>accountable care</role>
@@ -251,6 +266,7 @@
 		</bullet>
 		<bullet list-orientation="vert">
 			<title>service</title>
+			<!-- Standing donation sites endorsed by me -->
 				<line>equity</line>
 				<line>education</line>
 				<line>environment</line>
