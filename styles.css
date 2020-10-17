@@ -350,6 +350,7 @@ a.ga, a.ga:hover {
 	.entry {padding-left: 0%;}
 	.entry {font-size: calc(1rem - 0.5vw);}
 	.entry {white-space: nowrap; padding-bottom: 1vh;}
+	.entry .multi-entry:link, .entry .multi-entry:visited {font-size: inherit;}
 	.subtitle { font-size: calc(1rem - 0.5vw); vertical-align: top;}
 	.centered { font-size: calc(1rem - 0.5vw);}
 	.material-icons {font-size: 12px;}

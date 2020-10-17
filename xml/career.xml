@@ -96,9 +96,10 @@
 			</line>	
 			<line>systems design
 				<entry>framework
-					<link>https://dotnet.microsoft.com/</link>
-				</entry>
-				<!-- https://serverless.css-tricks.com/services/major -->
+					<linkset>
+						<link>https://dotnet.microsoft.com/</link>
+						<link>https://serverless.css-tricks.com/services/major</link>
+					</linkset>
 			</line>
 			<line>process optimization
 				<entry>strategy
