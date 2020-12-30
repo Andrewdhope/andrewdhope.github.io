@@ -20,10 +20,11 @@
 					<link>https://kpi.org/KPI-Basics/Dashboarding-and-Analysis</link>
 				</entry>				
 			</line>
-			<!--
-			<line>resilience
+			<line>quality
+				<entry>reliable
+					<link>https://www.freecodecamp.org/news/a-design-methodology-for-reliable-software-systems-a-summary-394dfd0dcbc2/</link>
+				</entry>
 			</line>
-			-->
 		</bullet>
 		<bullet list-orientation="vert">
 			<title>mining</title>
