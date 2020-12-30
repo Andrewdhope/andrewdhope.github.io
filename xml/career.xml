@@ -76,13 +76,16 @@
 				<entry>platforms
 					<linkset>
 						<link>https://www.wolfram.com/language/uses/</link>
-						<link>https://www.tidymodels.org/</link>
+						<link>https://hash.ai/</link>
 					</linkset>
 				</entry>
 			</line>
 			<line>forecasting
 				<entry>principles
 					<link>https://otexts.com/fpp2/</link>
+				</entry>
+				<entry>tools
+					<link>https://www.tidymodels.org/</link>
 				</entry>
 			</line>
 			<line>calibration
