@@ -21,8 +21,11 @@
 				</entry>				
 			</line>
 			<line>quality
-				<entry>reliable
-					<link>https://www.freecodecamp.org/news/a-design-methodology-for-reliable-software-systems-a-summary-394dfd0dcbc2/</link>
+				<entry>reliability
+					<linkset>
+						<link>https://www.computer.org/csdl/proceedings-article/afips/1972/50800191/12OmNxXUhP6</link>
+						<link>https://eng.uber.com/monitoring-data-quality-at-scale/</link>
+					</linkset>
 				</entry>
 			</line>
 		</bullet>
