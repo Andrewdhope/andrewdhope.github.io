@@ -138,11 +138,8 @@
 			<line>stats
 				<link>https://www.basketball-reference.com/</link>
 			</line>
-			<line>sheets
-				<link>https://www.spotrac.com/</link>
-			</line>
-			<line>search
-				<link>https://chrome.google.com/webstore/category/extensions?hl=en</link>
+			<line>salary
+				<link>https://chrome.google.com/webstore/detail/nba-salary-search/alkkhcmnofcbjloojjeghnpmjofpgifd?hl=en</link>
 			</line>
 			<line>courts
 				<link>https://www.instagram.com/explore/tags/hypecourts/</link>
@@ -253,13 +250,13 @@
 			<title>print</title>
 				<line>books
 					<entry>current
-						<link>https://en.wikipedia.org/wiki/The_Book_of_Night_Women</link>
+						<link>https://en.wikipedia.org/wiki/Black_Boy</link>
 					</entry>
 					<entry>recent
 						<linkset>
+							<link>https://en.wikipedia.org/wiki/Continental_Drift_(novel)</link>
+							<link>https://en.wikipedia.org/wiki/The_Book_of_Night_Women</link>
 							<link>https://en.wikipedia.org/wiki/Bibliography_of_the_Lewis_and_Clark_Expedition</link>
-							<link>https://en.wikipedia.org/wiki/Common_Sense</link>
-							<link>https://en.wikipedia.org/wiki/Democracy_in_America</link>
 						</linkset>
 					</entry>
 				</line>
