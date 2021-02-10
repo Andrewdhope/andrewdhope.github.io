@@ -33,8 +33,7 @@
 			<title>mining</title>
 			<line>structure
 				<entry>transactional
-					<link>https://www.oracle.com/database/technologies/appdev/sqldeveloper-landing.html</link>
-					<!-- https://dev.mysql.com/doc/#topic -->
+					<link>https://dev.mysql.com/doc/#topic</link>
 				</entry>
 				<entry>distributed
 					<link>https://www.mongodb.com/</link>
@@ -64,7 +63,7 @@
 				</entry>
 				<entry>notebooks
 					<linkset>
-						<link>https://www.shinyapps.io/</link> <!-- update with apportionment project -->
+						<link>https://www.shinyapps.io/</link>
 						<link>https://www.arcgis.com/home/index.html</link> <!-- https://andrewdhope.maps.arcgis.com/home/index.html -->
 					</linkset>
 				</entry>

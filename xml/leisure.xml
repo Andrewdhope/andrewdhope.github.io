@@ -62,13 +62,13 @@
 			<title>shows</title>
 				<line>modern
 					<entry>Better Call Saul
-						<link>https://www.imdb.com/title/tt3032476/plotsummary?ref_=tt_stry_pl</link>
+						<link>https://www.amc.com/shows/better-call-saul/explore--16</link>
 					</entry>
-					<entry>Westworld
-						<link>https://www.imdb.com/title/tt0475784/plotsummary?ref_=tt_stry_pl</link>
+					<entry>Veep
+						<link>https://www.hbo.com/veep</link>
 					</entry>
-					<entry>The Good Place
-						<link>https://www.imdb.com/title/tt4955642/plotsummary?ref_=tt_stry_pl</link>
+					<entry>This Is Us
+						<link>https://www.nbc.com/this-is-us</link>
 					</entry>
 				</line>
 				<line>classic
@@ -294,9 +294,6 @@
 					<entry>KDnuggets
 						<link>https://www.kdnuggets.com/</link>
 					</entry>
-					<entry>R-bloggers
-						<link>https://www.r-bloggers.com/</link>
-					</entry>
 					<entry>Health Affairs
 						<link>https://www.healthaffairs.org</link>
 					</entry>
@@ -320,6 +317,7 @@
 					<linkset>
 						<link>https://www.nytimes.com/interactive/2018/11/09/opinion/expanded-house-representatives-size.html</link>
 						<link>https://en.wikipedia.org/wiki/Congressional_Apportionment_Amendment</link>
+						<link>https://andrewdhope.shinyapps.io/Artificial_Scarcity/</link>
 					</linkset>
 				</entry>
 				<entry>privacy
