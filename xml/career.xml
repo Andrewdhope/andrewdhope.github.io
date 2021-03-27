@@ -22,16 +22,13 @@
 			</line>
 			<line>quality
 				<entry>reliability
-					<linkset>
-						<link>https://www.computer.org/csdl/proceedings-article/afips/1972/50800191/12OmNxXUhP6</link>
-						<link>https://eng.uber.com/monitoring-data-quality-at-scale/</link>
-					</linkset>
+						<link>https://increment.com/reliability/</link>
 				</entry>
 			</line>
 		</bullet>
 		<bullet list-orientation="vert">
 			<title>mining</title>
-			<line>structure
+			<line>architecture
 				<entry>transactional
 					<link>https://dev.mysql.com/doc/#topic</link>
 				</entry>
