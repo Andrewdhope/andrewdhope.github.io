@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+f<?xml version="1.0" encoding="UTF-8"?>
 <content>
 <!-- don't look back, look forward -->
 	<section option="media">
@@ -250,13 +250,13 @@
 			<title>print</title>
 				<line>books
 					<entry>current
-						<link>https://en.wikipedia.org/wiki/Black_Boy</link>
+						<link>https://en.wikipedia.org/wiki/The_Common_Wind</link>
 					</entry>
 					<entry>recent
 						<linkset>
-							<link>https://en.wikipedia.org/wiki/Continental_Drift_(novel)</link>
-							<link>https://en.wikipedia.org/wiki/The_Book_of_Night_Women</link>
-							<link>https://en.wikipedia.org/wiki/Bibliography_of_the_Lewis_and_Clark_Expedition</link>
+							<link>https://en.wikipedia.org/wiki/Sapiens:_A_Brief_History_of_Humankind</link>
+							<link>https://en.wikipedia.org/wiki/Strange_Angel</link>
+							<link>https://en.wikipedia.org/wiki/Brother,_I%27m_Dying</link>
 						</linkset>
 					</entry>
 				</line>
