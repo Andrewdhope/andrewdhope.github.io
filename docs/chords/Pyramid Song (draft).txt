@@ -11,7 +11,7 @@ The strum rhythm is in 5s, with a 3-beat pickup to start each line.
 
 		(3, 4, 5 _ 1, 2, 3, 4, 5 _ 1, 2)
 
- Type 1 (F# // G / _ A /// G // _ //)
+5 Type 1 (F# // G / _ A /// G // _ //)
  Type 2 (F# // G / _ A /// G // _ F# //)
  Type 3 (F#m // E / _ // G /// _ //)
  

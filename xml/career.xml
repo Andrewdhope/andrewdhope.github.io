@@ -22,7 +22,7 @@
 			</line>
 			<line>quality
 				<entry>reliability
-						<link>https://increment.com/reliability/</link>
+					<link>https://increment.com/reliability/</link>
 				</entry>
 			</line>
 		</bullet>
@@ -107,6 +107,7 @@
 				<entry>framework
 					<linkset>
 						<link>https://dotnet.microsoft.com/</link>
+						<link>https://nodejs.dev/</link>
 						<link>https://serverless.css-tricks.com/services/major</link>
 					</linkset>
 				</entry>
@@ -171,8 +172,8 @@
 				<entry>XML
 					<link>https://www.xmlvalidation.com/</link>
 				</entry>
-				<entry>M
-					<link>http://mumps.sourceforge.net/docs.html</link>
+				<entry>sh
+					<link>https://www.shellscript.sh/quickref.html</link>
 				</entry>
 			</line>
 			<line>presentation
@@ -222,7 +223,7 @@
 				<entry>ProHealth Care
 					<role>patient experience</role>
 					<link>https://mychart.prohealthcare.org/</link>
-				</entry>				
+				</entry>
 				<entry>University of California Davis Health
 					<role>telehealth</role>
 					<link>https://health.ucdavis.edu/medicalcenter/myucdavishealth/video-visits.html</link>
@@ -268,8 +269,8 @@
 				<entry>tutorials
 					<linkset>
 						<link>https://javascript.info</link>
+						<link>https://nodejs.dev/learn</link>
 						<link>https://fsharp.org/about/index.html</link>
-						<link>https://opendatastructures.org</link>
 					</linkset>
 				</entry>
 				<entry>showcase
