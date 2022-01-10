@@ -22,7 +22,7 @@
 			</line>
 			<line>quality
 				<entry>reliability
-						<link>https://increment.com/reliability/</link>
+					<link>https://increment.com/reliability/</link>
 				</entry>
 			</line>
 		</bullet>
@@ -53,8 +53,8 @@
 				</entry>
 				<entry>interfaces
 					<linkset>
-						<link>https://www.json.org/</link>
 						<link>https://www.postman.com/</link>
+						<link>https://rapidapi.com/</link>
 						<link>https://programmableweb.com/</link>
 					</linkset>
 				</entry>
@@ -100,13 +100,17 @@
 			<title>engineering</title>
 			<line>dataset evaluation
 				<entry>package
-					<link>https://moderndive.com/</link>
+					<linkset>
+						<link>https://moderndive.com/</link>
+						<link>https://pandas.pydata.org/pandas-docs/stable/reference/index.html</link>
+					</linkset>
 				</entry>
 			</line>	
 			<line>systems design
 				<entry>framework
 					<linkset>
 						<link>https://dotnet.microsoft.com/</link>
+						<link>https://nodejs.dev/</link>
 						<link>https://serverless.css-tricks.com/services/major</link>
 					</linkset>
 				</entry>
@@ -171,8 +175,8 @@
 				<entry>XML
 					<link>https://www.xmlvalidation.com/</link>
 				</entry>
-				<entry>M
-					<link>http://mumps.sourceforge.net/docs.html</link>
+				<entry>sh
+					<link>https://www.shellscript.sh/quickref.html</link>
 				</entry>
 			</line>
 			<line>presentation
