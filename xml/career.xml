@@ -53,8 +53,8 @@
 				</entry>
 				<entry>interfaces
 					<linkset>
-						<link>https://www.json.org/</link>
 						<link>https://www.postman.com/</link>
+						<link>https://rapidapi.com/</link>
 						<link>https://programmableweb.com/</link>
 					</linkset>
 				</entry>
@@ -100,7 +100,10 @@
 			<title>engineering</title>
 			<line>dataset evaluation
 				<entry>package
-					<link>https://moderndive.com/</link>
+					<linkset>
+						<link>https://moderndive.com/</link>
+						<link>https://pandas.pydata.org/pandas-docs/stable/reference/index.html</link>
+					</linkset>
 				</entry>
 			</line>	
 			<line>systems design
