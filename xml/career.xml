@@ -101,8 +101,8 @@
 			<line>dataset evaluation
 				<entry>package
 					<linkset>
+						<link>https://D3js.org/</link>
 						<link>https://moderndive.com/</link>
-						<link>https://pandas.pydata.org/pandas-docs/stable/reference/index.html</link>
 					</linkset>
 				</entry>
 			</line>	
@@ -175,7 +175,7 @@
 				<entry>XML
 					<link>https://www.xmlvalidation.com/</link>
 				</entry>
-				<entry>sh
+				<entry>shell
 					<link>https://www.shellscript.sh/quickref.html</link>
 				</entry>
 			</line>
