@@ -4,92 +4,48 @@
 	<section option="interests">
 		<bullet list-orientation="vert">
 			<title>design</title>
-			<line>philosophy
-				<entry>iteration
-					<link>https://www.designcouncil.org.uk/news-opinion/design-process-what-double-diamond</link>
-				</entry>
-				<entry>heuristics
-					<link>https://www.nngroup.com/articles/ten-usability-heuristics/</link>
-				</entry>
+			<line>heuristics
+				<link>https://www.nngroup.com/articles/ten-usability-heuristics/</link>
 			</line>
 			<line>objectives
-				<entry>documented
-					<link>https://www.range.co/blog/better-tech-specs</link>
-				</entry>
-				<entry>measurable
-					<link>https://kpi.org/KPI-Basics/Dashboarding-and-Analysis</link>
-				</entry>				
+				<link>https://kpi.org/KPI-Basics/Dashboarding-and-Analysis</link>
 			</line>
 			<line>quality
-				<entry>reliability
-					<link>https://increment.com/reliability/</link>
-				</entry>
+				<link>https://increment.com/reliability/</link>
 			</line>
 		</bullet>
 		<bullet list-orientation="vert">
 			<title>mining</title>
-			<line>architecture
-				<entry>transactional
-					<link>https://dev.mysql.com/doc/#topic</link>
-				</entry>
-				<entry>distributed
-					<link>https://www.mongodb.com/</link>
-				</entry>
-				<entry>warehousing
-					<link>https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/</link>
-				</entry>
+			<line>framework
+				<link>https://www.mongodb.com/</link>
 			</line>
 			<line>extraction
-				<entry>Tidyverse
-					<link>https://www.tidyverse.org/</link>
-				</entry>
-				<entry>MapReduce
-					<link>https://hadoop.apache.org/docs/r1.2.1/mapred_tutorial.html</link>
-				</entry>
-			</line>
-			<line>payload
-				<entry>pipelines
-					<link>https://aws.amazon.com/datapipeline/</link>
-				</entry>
 				<entry>interfaces
 					<linkset>
 						<link>https://www.postman.com/</link>
-						<link>https://rapidapi.com/</link>
 						<link>https://programmableweb.com/</link>
+						<link>https://apporchard.epic.com/</link>
+						<!-- <link>https://rapidapi.com/</link> -->
 					</linkset>
 				</entry>
-				<entry>notebooks
-					<linkset>
-						<link>https://www.shinyapps.io/</link>
-						<link>https://www.arcgis.com/home/index.html</link> <!-- https://andrewdhope.maps.arcgis.com/home/index.html -->
-					</linkset>
-				</entry>
+			</line>
+			<line>payload
+				<link>https://D3js.org</link>
 			</line>
 		</bullet>
 		<bullet list-orientation="vert">
 			<title>modeling</title>
 			<line>simulation
-				<entry>platforms
-					<linkset>
-						<link>https://www.wolfram.com/language/uses/</link>
-						<link>https://hash.ai/</link>
-					</linkset>
-				</entry>
+				<link>https://hash.ai/</link>
 			</line>
 			<line>forecasting
-				<entry>principles
-					<link>https://otexts.com/fpp2/</link>
-				</entry>
-				<entry>tools
-					<link>https://www.tidymodels.org/</link>
-				</entry>
+				<link>https://otexts.com/fpp2/</link>
 			</line>
 			<line>calibration
 				<entry>methods
 					<linkset>
-						<link>https://stats.stackexchange.com/search?q=calibration</link>
 						<link>https://projects.fivethirtyeight.com/checking-our-work/</link>
-						<link>https://en.wikipedia.org/wiki/Portal:Statistics</link>
+						<link>https://stats.stackexchange.com/search?q=calibration</link>
 					</linkset>
 				</entry>
 			</line>
@@ -99,25 +55,30 @@
 		<bullet list-orientation="vert">
 			<title>engineering</title>
 			<line>dataset evaluation
-				<entry>package
+				<entry>packages
 					<linkset>
-						<link>https://D3js.org/</link>
-						<link>https://moderndive.com/</link>
-					</linkset>
-				</entry>
-			</line>	
-			<line>systems design
-				<entry>framework
-					<linkset>
-						<link>https://dotnet.microsoft.com/</link>
-						<link>https://nodejs.dev/</link>
-						<link>https://serverless.css-tricks.com/services/major</link>
+						<link>https://www.tidyverse.org/</link>
+						<link>https://dev.mysql.com/doc/#topic</link>
+						<link>https://hadoop.apache.org/</link>
 					</linkset>
 				</entry>
 			</line>
-			<line>process optimization
-				<entry>strategy
-					<link>https://www.iise.org/details.aspx?id=839</link>
+			<line>systems architecture
+				<entry>stacks
+					<linkset>
+						<link>https://dotnet.microsoft.com/</link>
+						<link>https://nodejs.dev/</link>
+						<link>https://serverless.css-tricks.com/</link>
+					</linkset>
+				</entry>
+			</line>
+			<line>healthcare delivery
+				<entry>services
+					<linkset>
+						<link>https://www.mychart.com/</link>
+						<link>https://www.opennotes.org</link>
+						<link>https://www.epic.com/</link>
+					</linkset>
 				</entry>
 			</line>
 		</bullet>
@@ -130,7 +91,6 @@
 				<entry>A Tutorial on Principal Component Analysis
 					<link>https://www.arxiv-vanity.com/papers/1404.1100/</link>
 				</entry>
-				<!-- http://bayesrulesbook.com/ -->
 			</line>
 			<line>inference
 				<entry>Computer Age Statistical Inference
@@ -147,36 +107,38 @@
 				<entry>Data Visualization Society
 					<link>https://www.datavisualizationsociety.com/</link>
 				</entry>
-				<!-- https://r-graphics.org/ -->
 			</line>
 		</bullet>
 		<bullet list-orientation="vert">
 			<title>programming</title>
 			<line>analysis
 				<entry>R
-					<link>https://swirlstats.com/</link>
+					<link>https://moderndive.com/</link>
 				</entry>
 				<entry>SQL
 					<link>https://www.tsql.info/</link>
 				</entry>
 			</line>
 			<line>development
+				<entry>C#
+					<link>https://docs.microsoft.com/en-us/dotnet/csharp/</link>
+				</entry>
 				<entry>JavaScript
 					<linkset>
 						<link>https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference</link>
 						<link>https://www.digitalocean.com/community/tutorial_series/understanding-the-dom-document-object-model</link>
 					</linkset>
 				</entry>
-				<entry>C#
-					<link>https://docs.microsoft.com/en-us/dotnet/csharp/</link>
-				</entry>
 			</line>
 			<line>scripting
 				<entry>XML
-					<link>https://www.xmlvalidation.com/</link>
+					<link>https://codebeautify.org/xmlvalidator</link>
 				</entry>
 				<entry>shell
 					<link>https://www.shellscript.sh/quickref.html</link>
+				</entry>
+				<entry>Wolfram
+					<link>https://www.wolfram.com/language/uses/</link>
 				</entry>
 			</line>
 			<line>presentation
@@ -192,7 +154,6 @@
 	<section option="projects">
 		<bullet list-orientation="vert">
 			<title>healthcare</title>
-			<!-- https://www.mychart.com/  https://apporchard.epic.com/  https://www.ehrn.org/ -->
 			<line>Hartford HealthCare
 				<entry>enterprise implementation
 					<role>technical coordinator</role>
@@ -210,7 +171,6 @@
 					<role>application engineer</role>
 					<link>https://catalyst.nejm.org/implementing-proms-patient-reported-outcome-measures/</link>
 				</entry>
-				<!-- https://www.opennotes.org -->
 			</line>
 			<line>Stanford Health Care
 				<entry>patient scheduling
@@ -272,7 +232,7 @@
 				<entry>tutorials
 					<linkset>
 						<link>https://javascript.info</link>
-						<link>https://nodejs.dev/learn</link>
+						<link>https://swirlstats.com/</link>
 						<link>https://fsharp.org/about/index.html</link>
 					</linkset>
 				</entry>
@@ -290,14 +250,6 @@
 		</bullet>
 		<bullet list-orientation="vert">
 			<title>service</title>
-			<!-- Standing donation sites endorsed by me -->
-				<!-- http://d4bl.org/ -->
-				<!-- https://www.afsc.org/get-involved -->
-				<!-- https://www.eff.org/about/opportunities/volunteer/coding-with-eff -->
-				<!-- naacp-ldf -->
-				<!-- https://upchieve.org/ -->
-				<!-- https://www.khanacademy.org -->
-				<!-- nfp -->
 		</bullet>
 	</section>
 </content>

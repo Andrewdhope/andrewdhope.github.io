@@ -245,10 +245,10 @@
 				</line>
 		</bullet>
 	</section>
-	<section option="ideas">
+	<section option="letters">
 		<bullet list-orientation="vert">
-			<title>print</title>
-				<line>books
+			<title>lit</title>
+				<line>offline
 					<entry>current
 						<link>https://en.wikipedia.org/wiki/The_Common_Wind</link>
 					</entry>
@@ -260,46 +260,28 @@
 						</linkset>
 					</entry>
 				</line>
-				<line>pages
+				<line>online
 					<entry>Wired
 						<link>https://www.wired.com/category/ideas/</link>
-					</entry><entry>Longreads
+					</entry>
+					<entry>Longreads
 						<link>https://longreads.com/</link>
 					</entry>
 					<entry>The Atlantic
 						<link>https://theatlantic.com/</link>
 					</entry>
-					<entry>The Athletic
-						<link>https://theathletic.com/</link>
-					</entry>
 				</line>
 		</bullet>
 		<bullet list-orientation="vert">
-			<title>tech</title>
-				<line>science
-					<entry>Climate
-						<link>https://nca2018.globalchange.gov/</link>
-					</entry>
-					<entry>Geology
-						<link>https://geology.com/</link>
-					</entry>
-					<entry>Physics
-						<link>https://www.wolframphysics.org/</link>
-					</entry>
-					<entry>Sustainability
-						<link>https://www.scientificamerican.com/sustainability/</link>
-					</entry>
+			<title>lab</title>
+				<line>physics
+					<link>https://www.wolframphysics.org/</link>
 				</line>
-				<line>trade
-					<entry>KDnuggets
-						<link>https://www.kdnuggets.com/</link>
-					</entry>
-					<entry>Health Affairs
-						<link>https://www.healthaffairs.org</link>
-					</entry>
-					<entry>Digital Medicine
-						<link>https://www.nature.com/npjdigitalmed/</link>
-					</entry>
+				<line>geology
+					<link>https://geology.com/</link>
+				</line>
+				<line>ecology
+					<link>https://www.scientificamerican.com/sustainability/</link>
 				</line>
 		</bullet>
 		<bullet list-orientation="vert">

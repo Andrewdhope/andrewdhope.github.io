@@ -1,4 +1,5 @@
 :root {
+	/* update IE workarounds below */
 	--body-margin-top: 2vh;
 	--body-margin-bottom: 2vh;
 	--header-height: 10vh; 
@@ -8,7 +9,16 @@
 	--title-padding-bottom: 1vh;
 	--footer-height: 2vh;
 	--footer-margin: 2vh;
-	/* update IE workarounds below */
+	
+}
+
+html {
+	/* workaround to prevent footer links from appearing under the browser controls on iOS */
+	/* https://css-tricks.com/the-trick-to-viewport-units-on-mobile/ */ 
+	/* --vh: 100vh; */
+	/* height: 100vh; */
+	/* height: calc(var(--vh, 1vh) * 100); */
+	height: -webkit-fill-available
 }
 
 body {	
@@ -19,6 +29,9 @@ body {
 	font-size: calc(1rem + 0.25vw);
 	font-family: Ubuntu, Courier;
 	background-color: green;
+	/* height: calc((var(--vh)*100) - var(--body-margin-top) - var(--body-margin-bottom)) */
+	min-height: 100vh;
+	min-height: -webkit-fill-available;
 }
 /* IE10+ workaround */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -107,7 +120,8 @@ a:hover {
 section#content {
 	width: 75%;
 	float: left;
-	padding-bottom: 4%;
+	padding-bottom: 5vh;
+	margin-bottom: var(--footer-margin);
 	box-sizing: border-box;
 	background-color: green;
 	color: #cccccc;
@@ -271,17 +285,21 @@ a.multi-entry {
 
 /* general effects */
 
-.entry .multi-entry:link, .entry .multi-entry:visited  {
+.entry .multi-entry:link, .entry .multi-entry:visited, .line .multi-entry:link, .line .multi-entry:visited {
 	text-decoration: none;
 	font-size: 1rem;
 }
 
-.entry a.multi-entry:hover {
+.entry a.multi-entry:hover, .line a.multi-entry:hover {
 	text-decoration: underline;
 }
 
 .entry a:link, .entry a:visited, .line a:link, .line a:visited {
 	text-decoration: underline;
+}
+
+.line .multi-entry {
+	font-weight: bold;
 }
 
 sup {
@@ -292,8 +310,9 @@ sup {
 
 footer {
 	width: 100%;
-	height: var(--footer-height);
-	margin-top: var(--footer-margin);
+	/* height: var(--footer-height); */
+	/* margin-top: var(--footer-margin); */
+	padding-bottom: var(--footer-margin);
 	text-align: right;
 	font-size: calc(1rem - 0.25vw);
 	font-family: ubuntu, courier;
@@ -350,7 +369,7 @@ a.ga, a.ga:hover {
 	.entry {padding-left: 0%;}
 	.entry {font-size: calc(1rem - 0.5vw);}
 	.entry {white-space: nowrap; padding-bottom: 1vh;}
-	.entry .multi-entry:link, .entry .multi-entry:visited {font-size: inherit;}
+	.entry .multi-entry:link, .entry .multi-entry:visited, .line .multi-entry:link, .line .multi-entry:visited {font-size: inherit;}
 	.subtitle { font-size: calc(1rem - 0.5vw); vertical-align: top;}
 	.centered { font-size: calc(1rem - 0.5vw);}
 	.material-icons {font-size: 12px;}
