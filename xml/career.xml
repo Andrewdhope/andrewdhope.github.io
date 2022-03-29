@@ -156,7 +156,7 @@
 			<title>healthcare</title>
 			<line>Hartford HealthCare
 				<entry>enterprise implementation
-					<role>technical coordinator</role>
+					<role>technical director</role>
 					<role>support lead</role>
 					<role>vendor architect</role>
 					<link>https://hartfordhealthcare.org/about-us/careconnect/epic-electronic-health-record</link>
@@ -184,8 +184,12 @@
 					<link>https://www.scripps.org/</link>
 				</entry>
 				<entry>ProHealth Care
-					<role>patient experience</role>
+					<role>geolocation features</role>
 					<link>https://mychart.prohealthcare.org/</link>
+				</entry>
+				<entry>University of California Irvine Health
+					<role>patient experience</role>
+					<link>https://health.ucdavis.edu/medicalcenter/myucdavishealth/video-visits.html</link>
 				</entry>
 				<entry>University of California Davis Health
 					<role>telehealth</role>
