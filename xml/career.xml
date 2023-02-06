@@ -23,9 +23,8 @@
 				<entry>interfaces
 					<linkset>
 						<link>https://www.postman.com/</link>
-						<link>https://programmableweb.com/</link>
+						<link>https://rapidapi.com/</link>
 						<link>https://open.epic.com/</link>
-						<!-- <link>https://rapidapi.com/</link> -->
 					</linkset>
 				</entry>
 			</line>
@@ -58,7 +57,7 @@
 				<entry>packages
 					<linkset>
 						<link>https://www.tidyverse.org/</link>
-						<link>https://dev.mysql.com/doc/#topic</link>
+						<link>https://dev.mysql.com/doc/#product</link>
 						<link>https://hadoop.apache.org/</link>
 					</linkset>
 				</entry>
@@ -186,6 +185,10 @@
 				<entry>ProHealth Care
 					<role>geolocation features</role>
 					<link>https://mychart.prohealthcare.org/</link>
+				</entry>
+				<entry>HealthPartners
+					<role>analytics code migration</role>
+					<link>https://www.healthpartners.com/</link>
 				</entry>
 				<entry>University of California Irvine Health
 					<role>patient experience</role>
