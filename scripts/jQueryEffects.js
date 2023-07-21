@@ -22,25 +22,16 @@ function jBounceUp() {
 
 	// if the header is already up, just load the menu
 	if (document.getElementsByTagName("header")[0].classList.contains("up")) {
-		ajaxLoad(xmlpath,buildMenu,'xml/loadMenu.xsl',['#']);
+		if (menu_mode == "life") { fetchMenu() }
+		else { ajaxLoad(xmlpath,buildMenu,'xml/loadMenu.xsl',['#']) }
 	} else {
 	
 		$("header").addClass("up");
-
-		// *sigh* IE workaround
-		if (window.ActiveXObject !== undefined)
-		{
-		//	abandoning the initial animation for IE. It worked fairly well but had issues with the width of the wrapper. Animation is still in Edge. 
-		//	$("header").animate({paddingTop: "44vh"}, "slow"); // need to hardcode the paddingTop value for IE (from totalpaddingvint) 
-	
-		}
-		else // better browsers
-		{
-			$("header").animate(animatePadding, "slow"); // use the PlainObject constructed above
-		}
+		$("header").animate(animatePadding, "slow"); // use the PlainObject constructed above
 		
 		$("header").animate({paddingTop: '0vh'}, "slow", function() {
-			ajaxLoad(xmlpath,buildMenu,'xml/loadMenu.xsl',['#']) // takes a few seconds, async
+			if (menu_mode == "life") { fetchMenu() }
+			else { ajaxLoad(xmlpath,buildMenu,'xml/loadMenu.xsl',['#']) } // takes a few seconds, async
 			$("#wrapper").animate({width: '100%'}, "slow") 
 			$(".centered").animate({paddingRight: '0vw'}, "slow", function() {
 				$("footer p").slideDown("100")
