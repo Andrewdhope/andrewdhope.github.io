@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <content>
-<!-- don't look back, look forward -->
+<!-- music, games, books -->
 	<section option="content">
 		<bullet list-orientation="vert">
 			<title>Under Development</title>
 		</bullet>
 	</section>
-</content>                                                                                     
+</content>

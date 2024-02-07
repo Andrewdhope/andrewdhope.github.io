@@ -1,1 +1,32 @@
-[{"name": "yahtzee", "creator": "", "url": "http://mathworld.wolfram.com/Yahtzee.html"}, {"name": "backgammon", "creator": "", "url": "http://www.bkgm.com/rules.html"}, {"name": "chess", "creator": "", "url": "https://www.chess.com/"}, {"name": "the feud", "creator": "", "url": "https://familyfeudhelper.wordpress.com/category/game-questions/"}, {"name": "poker", "creator": "", "url": "https://www.wsop.com/poker-games/"}, {"name": "cards", "creator": "", "url": "https://bicyclecards.com/how-to-play/pitch/"}]
+[
+    {
+        "name": "cards",
+        "creator": "",
+        "url": "https://bicyclecards.com/how-to-play/pitch/"
+    },
+    {
+        "name": "poker",
+        "creator": "",
+        "url": "https://www.wsop.com/poker-games/"
+    },
+    {
+        "name": "the feud",
+        "creator": "",
+        "url": "https://familyfeudhelper.wordpress.com/category/game-questions/"
+    },
+    {
+        "name": "chess",
+        "creator": "",
+        "url": "https://www.chess.com/"
+    },
+    {
+        "name": "backgammon",
+        "creator": "",
+        "url": "http://www.bkgm.com/rules.html"
+    },
+    {
+        "name": "yahtzee",
+        "creator": "",
+        "url": "http://mathworld.wolfram.com/Yahtzee.html"
+    } 
+]

@@ -1,1 +1,30 @@
-[{"section":"books", "baseurl": "https://www.worldcat.org/search?q=isbn:", "properties":["Title", "Authors", "ISBN"]}, {"section":"music", "properties": ["title", "subtitle", "url"]},{"section":"games", "properties": ["name", "creator", "url"], "baseurl": ""}]
+[
+    {
+        "section": "books",
+        "baseurl": "https://www.worldcat.org/search?q=isbn:",
+        "properties": [
+            "Title",
+            "Authors",
+            "ISBN",
+            "Bagged"
+        ]
+    },
+    {
+        "section": "music",
+        "baseurl": "",
+        "properties": [
+            "title",
+            "subtitle",
+            "url"
+        ]
+    },
+    {
+        "section": "games",
+        "baseurl": "",
+        "properties": [
+            "name",
+            "creator",
+            "url"
+        ]
+    }
+]

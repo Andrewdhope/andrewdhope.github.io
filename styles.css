@@ -132,7 +132,7 @@ section#content.border {
 	border-style: dashed;
 }
 
-section#content.life-list {
+section#content.overflow-list {
 	overflow: auto;
 	height: 75vh;
 }
@@ -159,6 +159,15 @@ nav#menu ul {
 nav#menu li:before {
 	content: " - ";
 	padding-right: 10px;
+}
+
+.collator {
+	text-align: right;
+	margin-left:  10%;
+	margin-right: 2.5%;
+	padding-bottom: 1%;
+	border-width: 1px;
+	border-bottom-style: dashed;
 }
 
 /* positioning of the group class to keep the footer stuck to the bottom */
@@ -195,7 +204,7 @@ h2.empty:hover, h3.empty:hover {
 	text-decoration: none;
 }
 
-h2.empty, h3.empty` {
+h2.empty, h3.empty {
 	cursor: default;
 }
 
@@ -225,6 +234,11 @@ h2.empty, h3.empty` {
 .line {
 	display: none; /* needed for jQuery effects */
 	padding-left: 5%; 
+}
+
+.Authors {
+	display: block;
+	padding-left: 2.5%;
 }
 
 .entry {

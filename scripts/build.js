@@ -29,16 +29,16 @@ async function fetchMenu() {
 	const menuJson = await response.json();
 	let returnMenu = "<ul>";
 	for (let obj in menuJson) {
-		console.log(`${obj}: ${menuJson[obj].section}`); // debug
-		console.log(`${obj}: ${menuJson[obj].properties[0]}`); // debug
 		// from here just build the html structure
 		returnMenu += "<li class=\"menulist\">";
 			returnMenu += "<a href=\"#\" onclick=\"buildJsonContent('" 
 			returnMenu += `${menuJson[obj].section}` 
-			returnMenu += "','" + `${menuJson[obj].properties[0]}` 
-			returnMenu += "','" + `${menuJson[obj].properties[1]}`
-			returnMenu += "','" + `${menuJson[obj].properties[2]}`
-			returnMenu += "','" + `${menuJson[obj].baseurl}` + "');";
+			returnMenu += "','" 
+			returnMenu += `${menuJson[obj].baseurl}`
+			for (let i in menuJson[obj].properties) {
+				returnMenu += "','" + `${menuJson[obj].properties[i]}` 	
+			}
+			returnMenu += "');";
 			returnMenu += "selectedMenu('" + `${menuJson[obj].section}` + "');\">";
 			returnMenu += `${menuJson[obj].section}`;
 			returnMenu += "</a>";
@@ -46,7 +46,7 @@ async function fetchMenu() {
 	}
 	returnMenu += "</ul>";
 	
-	console.log(returnMenu) // debug
+	//console.log(returnMenu) 
 	
 	$("#content").slideUp("slow", function() { // slide the content side up before re-loading the navigation menu
 		$("#content").html(""); // clear content
@@ -66,29 +66,37 @@ async function fetchMenu() {
 }
 
 // buildJsonContent
-// next step: continue building out html, using existing 'work' formatting for now
-async function buildJsonContent(file, primary, secondary, queryparams, baseurl) {
+// all entries in menu.json have a section and baseurl, then a properties array that goes into args here
+async function buildJsonContent(file, baseurl,...args) {
 	const filepath = './json/' + file + '.json';
-	console.log(filepath);
 	const fileRequest = new Request(filepath);
 	const response = await fetch(fileRequest);
-	const jsonResponse = await response.json();
-	let returnContent = ""
-	console.log(`${jsonResponse[0][primary]}`)
-	for (let obj in jsonResponse) {
-		returnContent += "<div class=\"bullet\" id=\"" + `${jsonResponse[obj][primary]}` + "\">"
-		returnContent += "<h2 class=\"collapsible\">"
-		returnContent += "<a href=\"" + baseurl + `${jsonResponse[obj][queryparams]}` + "\" target=\"_blank\">"
-		returnContent += `${jsonResponse[obj][primary]}`
-		returnContent += "</a>"
-		returnContent += "</h2>"
-		returnContent += "<div>"
-		returnContent += `${jsonResponse[obj][secondary]}`
-		returnContent += "</div>"
-		// returnContent += "<p>"
-		// returnContent += `${jsonResponse[obj][description]}`
-		// returnContent += "</p>"
-		returnContent += "</div>"
+	const jsonResponse = await response.json();	
+
+	let sortedObj = sortByDate(jsonResponse, args[3]);
+	let resonseObj = {};	
+	let returnContent = "";
+
+	for (let i = Object.keys(sortedObj).length - 1; i >= 0; i--) {
+		let ikey = Object.keys(sortedObj)[i];
+		if (ikey > 0 ) {
+			returnContent += "<div class=\"collator\">" + ikey + "</div>"
+		}
+		for (let j = Object.keys(sortedObj[ikey]["sortedObject"]).length - 1; j >=0; j--) {
+			let jkey = Object.keys(sortedObj[ikey]["sortedObject"])[j]
+			resonseObj = sortedObj[ikey]["sortedObject"][jkey][1]
+			
+			returnContent += "<div class=\"bullet\" id=\"" + `${resonseObj[args[0]]}` + "\">"
+			returnContent += "<h2 class=\"collapsible\">"
+			returnContent += "<a href=\"" + baseurl + `${resonseObj[args[2]]}` + "\" target=\"_blank\">"
+			returnContent += `${resonseObj[args[0]]}`
+			returnContent += "</a>"
+			returnContent += "</h2>"
+			returnContent += "<div class=\"line " + args[1] + "\">"
+			returnContent += `${resonseObj[args[1]]}`
+			returnContent += "</div>"
+			returnContent += "</div>"
+		}
 	}
 	// 'slide up, clear, and append'
 	$("#content").slideUp("slow", function() {
@@ -96,15 +104,51 @@ async function buildJsonContent(file, primary, secondary, queryparams, baseurl) 
 		if (!document.getElementById("content").classList.contains("border")) {
 			$("#content").addClass("border")
 		}
-		if (!document.getElementById("content").classList.contains("life-list")) {
-			$("#content").addClass("life-list")
+		if (!document.getElementById("content").classList.contains("overflow-list")) {
+			$("#content").addClass("overflow-list")
 		}
 		$("#content").html(""); // clear content
 		$("#content").html(returnContent).slideDown(); 
-		}
-	); 
+	}); 
 	return;
 }
+
+// sortByDate
+// dateProperty is assumed to be dash-delimited date string
+function sortByDate(jsonObject, dateProperty) {
+	let dateNode = "";
+	let yearPiece = "";
+	let sortedObj = {};
+
+	for (let i in jsonObject) {
+		dateNode = dateProperty;
+		if (dateNode != null) {
+			yearPiece = jsonObject[i][dateNode].split('-')[0];
+		}
+		else {
+			// if dateProperty doesn't exist, sort by (reverse) index-order of the json object
+			dateNode = i
+			yearPiece = -1;
+			jsonObject[i][dateNode] = i;
+		}
+		if (sortedObj[yearPiece] != null) {
+			sortedObj[yearPiece].sortedObject.push([jsonObject[i][dateNode], jsonObject[i]]);
+		}
+		else {
+			// instantiate sortedObject for this year node
+			// sortedObject contains the full date node and the full json object
+			sortedObj[yearPiece] = {sortedObject: []};
+			sortedObj[yearPiece].sortedObject = [[jsonObject[i][dateNode], jsonObject[i]]];
+		}
+	}
+	
+	for (let i in sortedObj) {
+		sortedObj[i].sortedObject = sortedObj[i].sortedObject.sort();
+	}
+	
+	return sortedObj;
+}
+
 
 // ajaxLoad
 // standard ajax call using the XMLHttpRequest object
