@@ -104,6 +104,8 @@ async function buildJsonContent(file, baseurl,...args) {
 		if (!document.getElementById("content").classList.contains("border")) {
 			$("#content").addClass("border")
 		}
+		// currently setting the height to 75vh for all json content, and dynamic for ajax content
+		// need to size the overflow dynamically
 		if (!document.getElementById("content").classList.contains("overflow-list")) {
 			$("#content").addClass("overflow-list")
 		}
@@ -201,6 +203,9 @@ function buildMenu(xslDoc, xmlDoc) {
 			// start showing the border after one of the menu options is first clicked
 			if (!document.getElementById("menu").classList.contains("border")) {
 				$("#menu").addClass("border")
+			}
+			if (document.getElementById("content").classList.contains("overflow-list")) {
+				$("#content").removeClass("overflow-list")
 			}
 			$("#menu").html(""); // clear menu
 			$("#menu").append(resultDocument).slideDown(); // append
