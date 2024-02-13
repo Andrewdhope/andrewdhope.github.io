@@ -129,17 +129,6 @@
 					</linkset>
 				</entry>
 			</line>
-			<line>scripting
-				<entry>XML
-					<link>https://codebeautify.org/xmlvalidator</link>
-				</entry>
-				<entry>shell
-					<link>https://www.shellscript.sh/quickref.html</link>
-				</entry>
-				<entry>Wolfram
-					<link>https://www.wolfram.com/language/uses/</link>
-				</entry>
-			</line>
 			<line>presentation
 				<entry>CSS
 					<link>https://css-tricks.com/</link>
@@ -178,17 +167,25 @@
 				</entry>
 			</line>
 			<line>consulting
+				<entry>OU Health
+					<role>reporting content</role>
+					<link>https://www.ouhealth.com/</link>
+				</entry>
 				<entry>Scripps Health
 					<role>predictive analytics</role>
 					<link>https://www.scripps.org/</link>
+				</entry>
+				<entry>HealthPartners
+					<role>query re-platform</role>
+					<link>https://www.healthpartners.com/</link>
 				</entry>
 				<entry>ProHealth Care
 					<role>geolocation features</role>
 					<link>https://mychart.prohealthcare.org/</link>
 				</entry>
-				<entry>HealthPartners
-					<role>analytics code migration</role>
-					<link>https://www.healthpartners.com/</link>
+				<entry>Stanford Health Care
+					<role>anatomic pathology</role>
+					<link>https://stanfordlab.com/anatomic-pathology.html</link>
 				</entry>
 				<entry>University of California Irvine Health
 					<role>patient experience</role>
@@ -213,7 +210,7 @@
 			</line>
 		</bullet>
 		<bullet list-orientation="vert">
-			<title>engineering</title>
+			<title>academics</title>
 			<line>University of Pittsburgh
 				<entry>Bachelor of Science in Industrial Engineering
 					<detail>cum laude</detail>
