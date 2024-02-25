@@ -134,7 +134,7 @@ section#content.border {
 
 section#content.overflow-list {
 	overflow: auto;
-	height: 75vh;
+	height: calc((var(--vh)*75) - var(--footer-margin));
 }
 
 nav#menu {
