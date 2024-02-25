@@ -67,7 +67,7 @@
 					<linkset>
 						<link>https://dotnet.microsoft.com/</link>
 						<link>https://nodejs.dev/</link>
-						<link>https://serverless.css-tricks.com/</link>
+						<link>https://www.mongodb.com/</link>
 					</linkset>
 				</entry>
 			</line>
@@ -115,7 +115,7 @@
 					<link>https://moderndive.com/</link>
 				</entry>
 				<entry>SQL
-					<link>https://www.tsql.info/</link>
+					<link>https://cloud.google.com/bigquery/docs/reference/standard-sql/query-syntax</link>
 				</entry>
 			</line>
 			<line>development
@@ -131,7 +131,7 @@
 			</line>
 			<line>presentation
 				<entry>CSS
-					<link>https://css-tricks.com/</link>
+					<link>https://css-tricks.com/archives/</link>
 				</entry>
 				<entry>HTML
 					<link>https://www.w3schools.com/tags/ref_byfunc.asp</link>
@@ -176,7 +176,7 @@
 					<link>https://www.scripps.org/</link>
 				</entry>
 				<entry>HealthPartners
-					<role>query re-platform</role>
+					<role>query migration</role>
 					<link>https://www.healthpartners.com/</link>
 				</entry>
 				<entry>ProHealth Care

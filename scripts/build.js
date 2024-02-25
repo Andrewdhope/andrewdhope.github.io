@@ -99,7 +99,7 @@ async function buildJsonContent(file, baseurl,...args) {
 		}
 	}
 	// 'slide up, clear, and append'
-	$("#content").slideUp("slow", function() {
+	$("#content").slideUp(750, function() {
 		// start showing the border after one of the menu options is first clicked
 		if (!document.getElementById("content").classList.contains("border")) {
 			$("#content").addClass("border")
@@ -110,7 +110,7 @@ async function buildJsonContent(file, baseurl,...args) {
 			$("#content").addClass("overflow-list")
 		}
 		$("#content").html(""); // clear content
-		$("#content").html(returnContent).slideDown(); 
+		$("#content").html(returnContent).slideDown(750); 
 	}); 
 	return;
 }
@@ -204,8 +204,13 @@ function buildMenu(xslDoc, xmlDoc) {
 			if (!document.getElementById("menu").classList.contains("border")) {
 				$("#menu").addClass("border")
 			}
+			/*
 			if (document.getElementById("content").classList.contains("overflow-list")) {
 				$("#content").removeClass("overflow-list")
+			}
+			*/
+			if (!document.getElementById("content").classList.contains("overflow-list")) {
+				$("#content").addClass("overflow-list")
 			}
 			$("#menu").html(""); // clear menu
 			$("#menu").append(resultDocument).slideDown(); // append
@@ -225,13 +230,13 @@ function buildContent(xslDoc, xmlDoc, sectionVal) {
 	resultDocument = xsltProcessor.transformToFragment(xmlDoc, document);
 
 	// 'slide up, clear, and append'
-	$("#content").slideUp("slow", function() {
+	$("#content").slideUp(750, function() {
 		// start showing the border after one of the menu options is first clicked
 		if (!document.getElementById("content").classList.contains("border")) {
 			$("#content").addClass("border")
 		}
 		$("#content").html(""); // clear content
-		$("#content").append(resultDocument).slideDown(); // append
+		$("#content").append(resultDocument).slideDown(750); // append
 		}
 	); 
 	return;
