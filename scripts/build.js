@@ -49,15 +49,18 @@ async function fetchMenu() {
 	//console.log(returnMenu) 
 	
 	$("#content").slideUp("slow", function() { // slide the content side up before re-loading the navigation menu
-		$("#content").html(""); // clear content
-		$("#menu").slideUp("slow", function() {
-			// start showing the border after one of the menu options is first clicked
-			if (!document.getElementById("menu").classList.contains("border")) {
-				$("#menu").addClass("border")
+		ajaxLoad(xmlpath,buildContent,xslpath,['intro']);
+
+		if (mode_change == 1) {
+			$("#menu").slideUp("slow", function() {
+				// start showing the border after one of the menu options is first clicked
+				if (!document.getElementById("menu").classList.contains("border")) {
+					$("#menu").addClass("border")
+				}
+				$("#menu").html(""); // clear menu
+				$("#menu").append(returnMenu).slideDown(); // append
+				}); 
 			}
-			$("#menu").html(""); // clear menu
-			$("#menu").append(returnMenu).slideDown(); // append
-			}); 
 		}
 	);
 	// take the array and build the menu (new function)
@@ -190,33 +193,35 @@ function getStylesheet(stylesheetPath, callback, args) {
 
 // buildMenu
 // the callback functions take an xsl stylesheet in the first parameter and the xml document in the second
-function buildMenu(xslDoc, xmlDoc) {
+function buildMenu(xslDoc, xmlDoc, mode_click) {
 	var xsltProcessor, resultDocument ;
 	xsltProcessor = new XSLTProcessor();
 	xsltProcessor.importStylesheet(xslDoc); 
 	resultDocument = xsltProcessor.transformToFragment(xmlDoc, document);	
-	
-	// 'slide up, clear, and append'
-	$("#content").slideUp("slow", function() { // slide the content side up before re-loading the navigation menu
-		$("#content").html(""); // clear content
-		$("#menu").slideUp("slow", function() {
-			// start showing the border after one of the menu options is first clicked
-			if (!document.getElementById("menu").classList.contains("border")) {
-				$("#menu").addClass("border")
-			}
-			/*
-			if (document.getElementById("content").classList.contains("overflow-list")) {
-				$("#content").removeClass("overflow-list")
-			}
-			*/
-			if (!document.getElementById("content").classList.contains("overflow-list")) {
-				$("#content").addClass("overflow-list")
-			}
-			$("#menu").html(""); // clear menu
-			$("#menu").append(resultDocument).slideDown(); // append
+
+	$("#content").slideUp("slow", function() {
+		ajaxLoad(xmlpath,buildContent,xslpath,['intro']);
+
+		if (mode_change == 1) {
+			$("#menu").slideUp("slow", function() {
+				// start showing the border after one of the menu options is first clicked
+				if (!document.getElementById("menu").classList.contains("border")) {
+					$("#menu").addClass("border")
+				}
+				/*
+				if (document.getElementById("content").classList.contains("overflow-list")) {
+					$("#content").removeClass("overflow-list")
+				}
+				*/
+				if (!document.getElementById("content").classList.contains("overflow-list")) {
+					$("#content").addClass("overflow-list")
+				}
+				$("#menu").html(""); // clear menu
+				$("#menu").append(resultDocument).slideDown(); // append
 			}); 
 		}
-	);
+	});
+
 	return;
 }
 

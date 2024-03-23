@@ -24,6 +24,7 @@ function jBounceUp() {
 	if (document.getElementsByTagName("header")[0].classList.contains("up")) {
 		if (menu_mode == "life") { fetchMenu() }
 		else { ajaxLoad(xmlpath,buildMenu,'xml/loadMenu.xsl',['#']) }
+		
 	} else {
 	
 		$("header").addClass("up");
@@ -37,7 +38,27 @@ function jBounceUp() {
 				$("footer p").slideDown("100")
 				$(".subtitle").fadeIn("10")
 				$("header").removeClass("down")
+				
+				if (!document.getElementById("content").classList.contains("overflow-list")) {
+					$("#content").addClass("overflow-list")
+				}
+				
+				/*
+				if (!document.getElementById("content").classList.contains("border")) {
+					$("#content").addClass("border");
+				}
+				*/
+				
+				/* 
+				// confident in eliminating the slideDown, but not sure whether or not we need the padding-bottom added here
+				$("#content").slideDown(750, function(){
+					$("#content").css({"padding-bottom": "5vh"}) // consider adding a class and controlling css in styles
+				});
+				*/
+				
 			});
+
 		});	
 	}
+	
 }

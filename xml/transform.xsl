@@ -2,6 +2,19 @@
 <xsl:transform version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:param name="sectionVal" />
 <xsl:template match="content">
+
+<xsl:for-each select="intro[@option = $sectionVal]/blurb">
+	<xsl:element name="p">
+		<xsl:attribute name="class">blurb</xsl:attribute>
+		<xsl:if test="@option='quote'">
+			<xsl:attribute name="class">quote</xsl:attribute>
+		</xsl:if>
+		<xsl:if test="@option='attrib'">
+			<xsl:attribute name="class">attrib</xsl:attribute>
+		</xsl:if>
+		<xsl:value-of select="normalize-space(text())"/> 
+	</xsl:element>
+</xsl:for-each>
 <xsl:for-each select="section[@option = $sectionVal]/bullet">
 	<!-- element IDs shouldn't contain spaces, use translate to remove them with XSLT 1.0 -->
 	<xsl:variable name="bullet" select="translate(normalize-space(title/text()),' ','_')" />
@@ -15,7 +28,11 @@
 				<xsl:attribute name="class">collapsible</xsl:attribute>
 			</xsl:if>
 			<xsl:attribute name="onclick">
-				<xsl:text>expandBullet('</xsl:text><xsl:value-of select="$bullet" /><xsl:text>')</xsl:text>
+				<xsl:text>expandBullet('</xsl:text><xsl:value-of select="$bullet" />
+				<xsl:if test="@auto-expand > -1"> 
+					<xsl:text>','</xsl:text><xsl:value-of select="@auto-expand" />
+				</xsl:if>
+				<xsl:text>')</xsl:text>
 			</xsl:attribute>
 			<xsl:value-of select="title"/> <!-- actual value of the header -->
 		</xsl:element>
@@ -34,10 +51,19 @@
 				<xsl:attribute name="class">lineset horiz</xsl:attribute>
 			</xsl:if>
 			
-			<xsl:for-each select="line">
+			<!-- substitute a paragraph when there are no links and just a writeup -->
+			<xsl:if test="count(writeup) > 0">
+				<xsl:element name="a">
+					<xsl:attribute name="class">writeup</xsl:attribute>
+					<xsl:value-of select="normalize-space(writeup/text())"/> 
+				</xsl:element>
+			</xsl:if>
+			
+		<xsl:for-each select="line">
 			<!-- element IDs shouldn't contain spaces, use translate to remove them with XSLT 1.0 -->
 			<xsl:variable name="line" select="translate(normalize-space(text()),' ','_')" />
 			
+
 			<div class="line" id="{$line}">
 				<!-- assign a class (collapsible, empty) based on whether there is content under this line -->
 				<xsl:element name="h3">

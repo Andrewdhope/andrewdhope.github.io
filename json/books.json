@@ -978,5 +978,47 @@
         "Language": "English",
         "Location": "Unknown",
         "Date": "06/02/2024 17:26:41"
+    },
+    {
+        "ISBN": "9780618249060",
+        "Title": "Silent Spring",
+        "Quantity": 1,
+        "Description": "The essential, cornerstone book of modern environmentalism is now offered in a handsome 40th anniversary edition which features a new Introduction by activist Terry Tempest Williams and a new Afterword by Carson biographer Linda Lear.",
+        "Authors": "Rachel Carson",
+        "Publisher": "Houghton Mifflin Harcourt",
+        "Published": "2002-01-01",
+        "Bagged": "2024-03-16",
+        "Pages": "404",
+        "Language": "English",
+        "Location": "Unknown",
+        "Date": "15/03/2024 16:01:06"
+    },
+    {
+        "ISBN": "9780141975580",
+        "Title": "Feral",
+        "Quantity": 1,
+        "Description": "How many of us sometimes feel that we are scratching at the walls of this life, seeking to find our way into a wider space beyond? That our mild, polite existence sometimes seems to crush the breath out of us? Feral is the lyrical and gripping story of George Monbiot's efforts to re-engage with nature and discover a new way of living. He shows how, by restoring and rewilding our damaged ecosystems on land and at sea, we can bring wonder back into our lives. Making use of some remarkable scientific discoveries, Feral lays out a new, positive environmentalism, in which nature is allowed to find its own way. 'Passionate, brilliant, timely . . . we need such big thinking . . . let the wild rumpus start.' Philip Hoare, Sunday Telegraph 'Feral reflects a very real need in us all right now to be released from our claustrophobic monoculture and sense of powerlessness . . . To rewild both the landscape and ourselves. It is the most positive and daring environmental book I have read.' Thom Yorke 'His passion is for a wilder world, a world less circumscribed by fear and greed. And he's right . . . he refreshes your view.' Simon Barnes, The Times 'To read this seminal, subversive, sometimes intoxicating book could mean never to look at our landscape in quite the same way again.' Michael Viney, Irish Times 'It imagines the lives we no longer lead, but might, the species that no longer exist, but could.' Robert Macfarlane 'Made me dream of seeing lynx and beavers roaming the countryside.' Ali Shaw, Observer, Books of the Year",
+        "Authors": "George Monbiot",
+        "Publisher": "",
+        "Published": "2014-06-05",
+        "Bagged": "2024-03-29",
+        "Pages": "336",
+        "Language": "English",
+        "Location": "Unknown",
+        "Date": "15/03/2024 16:01:25"
+    },
+    {
+        "ISBN": "9780374511999",
+        "Title": "Cancer Ward",
+        "Quantity": 1,
+        "Description": "A largely autobiographical account of a group of people who pass through the cancer wing of a provincial Soviet hospital in 1955, it is a vivid portrait of individuals in isolation whose collective concern is disease. Through stories of patients and doctors, political prisoners and bureaucrats, the young and the old, it probes the fears and the hopes of an entire cross-section of Soviet society. Cancer ward has been seen as a metaphor for the malignancy afflicting the Russian nation, but the moral and ethical questions it raises-about love and conscience, life and death, spiritual sorrows and triumphs-rise above their immediate political context to assure universal significance",
+        "Authors": "Aleksandr Solzhenitsyn",
+        "Publisher": "Dial Press",
+        "Published": "1968-01-01",
+        "Bagged": "2024-02-22",
+        "Pages": "569",
+        "Language": "English",
+        "Location": "Unknown",
+        "Date": "15/03/2024 16:06:00"
     }
 ]

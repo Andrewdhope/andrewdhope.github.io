@@ -3,17 +3,26 @@
 
 // expandBullet
 // change the icon and slide the content up/down
-function expandBullet(bullet) {
+function expandBullet(bullet, expand_index) {
 
 	var header = document.getElementById(bullet);
 	var title = header.childNodes[1]; // h2
-	
+
+	// does this need to be an async function that kicks off the rest after this is loaded?
+	if (expand_index >= 0) {
+		var expand_index2 = expand_index * 2;
+		var line = document.getElementById(bullet).children[2].children[expand_index2].id;
+	}
+
 	// change the icon and slide the content up/down
 	if (title.classList.contains("active")) {
 		title.classList.remove("active")
 		$("#" + bullet + " span:first").html("expand_more")
 		$("#" + bullet + " .lineset").slideUp("slow", function(){
-			$("#" + bullet + " .line").hide()
+			$("#" + bullet + " .line").hide();
+			if (expand_index >= 0) {
+				expandLine(line);
+			}
 		})		
 	
 	} else {
@@ -30,7 +39,13 @@ function expandBullet(bullet) {
 			if ($("#" + bullet + " .lineset").hasClass("horiz")) {
 				$("#" + bullet + " .line").css({"display": "inline"})
 			}
-			$("#" + bullet + " .lineset").slideDown("slow")
+			
+			$("#" + bullet + " .lineset").slideDown("slow", function(){
+				if (expand_index >= 0) {
+					expandLine(line);
+				}
+			  });
+
 		}
 	}
 }

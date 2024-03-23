@@ -115,12 +115,15 @@ a:hover {
 	text-decoration: underline;
 }
 
+a.writeup:hover {
+	text-decoration: none;
+}
+
 /* --- BODY --- */ 
 
 section#content {
 	width: 75%;
 	float: left;
-	padding-bottom: 5vh;
 	margin-bottom: var(--footer-margin);
 	box-sizing: border-box;
 	background-color: green;
@@ -135,6 +138,23 @@ section#content.border {
 section#content.overflow-list {
 	overflow: auto;
 	height: calc((var(--vh)*75) - var(--footer-margin));
+	padding-bottom: 5vh;
+}
+
+section#content p {
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 2.5%;
+}
+
+section#content p.quote {
+	font-style: italic;
+	margin-left: 5%;
+	padding-top: 10vh;
+}
+
+section#content p.attrib {
+	margin-left: 6%;
 }
 
 nav#menu {
@@ -213,6 +233,7 @@ h2.empty, h3.empty {
 	border-style: dashed;
 	border-width: 0px 0px 0px 1px;
 	padding-left: 5%;
+	padding-right: 5%; 
 }
 
 /* expand_more and expand_less icons */

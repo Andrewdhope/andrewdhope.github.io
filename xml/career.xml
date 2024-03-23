@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <content>
 <!-- don't look back, look forward -->
+	<intro option="intro">
+		<blurb>You have reached the web portfolio of andrewdhope. Welcome!</blurb>
+		<blurb>This personal showcase contains many topics of interest. Some of these are aspirational, but many reflect real-world accomplishment and experience.</blurb>
+		<blurb>The layout and features of this site were designed from scratch, without a template, and were implemented with classic web design tools.</blurb>
+		<blurb>Please make your way through the grounds, exploring links and dropdowns along the way.</blurb>
+		<blurb option="quote">"'After all is said and done,' said Wilson one day after supper, 'the best sledger is the man who sees what has to be done, and does it -- and says nothing about it.'"</blurb>
+		<blurb option="attrib">Apsley Cherry-Garland, The Worst Journey in the World</blurb>
+	</intro>
 	<section option="interests">
 		<bullet list-orientation="vert">
 			<title>design</title>
+			<writeup>Design work is a pillar of engineering. Starting from neutral, a designer expresses a solution in which intricate features link to a thematic core.</writeup>
 			<line>heuristics
 				<link>https://www.nngroup.com/articles/ten-usability-heuristics/</link>
 			</line>
@@ -16,6 +25,7 @@
 		</bullet>
 		<bullet list-orientation="vert">
 			<title>mining</title>
+			<writeup>Data mining leverages public protocols, interfaces, and inventive retrieval methods to extract structured data from various database framework sets.</writeup>
 			<line>framework
 				<link>https://www.mongodb.com/</link>
 			</line>
@@ -34,6 +44,7 @@
 		</bullet>
 		<bullet list-orientation="vert">
 			<title>modeling</title>
+			<writeup>Mathematical models allow for exploratory analysis, through computational reducibility and calibrated simulation, to forecast outcomes within an quantifiable error range.</writeup>
 			<line>simulation
 				<link>https://hash.ai/</link>
 			</line>
@@ -140,7 +151,7 @@
 		</bullet>
 	</section>
 	<section option="projects">
-		<bullet list-orientation="vert">
+		<bullet list-orientation="vert" auto-expand="3">
 			<title>healthcare</title>
 			<line>Hartford HealthCare
 				<entry>enterprise implementation

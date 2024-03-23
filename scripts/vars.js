@@ -1,4 +1,4 @@
-var xmlpath, xslpath ;
+var xmlpath, xslpath, menu_mode, mode_change ;
 
 function vhViewport() {
 	/* workaround to prevent footer links from appearing under the browser controls on iOS */
@@ -14,14 +14,26 @@ function vhViewport() {
 
 function setPath(setting) {
 	if (setting == "work") {
+		if (menu_mode !== null && menu_mode !== "work") {
+			mode_change = 1
+		}
+		else {
+			mode_change = 0
+		}
 		menu_mode = "work"
 		xmlpath = "xml/career.xml"
 		xslpath = "xml/transform.xsl"
 	}
 	
 	if (setting == "life") {
+		if (menu_mode !== null && menu_mode !== "life") {
+			mode_change = 1
+		}
+		else {
+			mode_change = 0
+		}
 		menu_mode = "life"
-		xmlpath = "xml/leisure.xml"
+		xmlpath = "xml/career.xml"
 		xslpath = "xml/transform.xsl"
 	}
 }
