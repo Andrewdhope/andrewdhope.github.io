@@ -3,9 +3,9 @@
 <!-- don't look back, look forward -->
 	<intro option="intro">
 		<blurb>You have reached the web portfolio of andrewdhope. Welcome!</blurb>
-		<blurb>This personal showcase contains many topics of interest. Some of these are aspirational, but many reflect real-world accomplishment and experience.</blurb>
-		<blurb>The layout and features of this site were designed from scratch, without a template, and were implemented with classic web design tools.</blurb>
-		<blurb>Please make your way through the grounds, exploring links and dropdowns along the way.</blurb>
+		<blurb>This personal showcase contains several topics of interest. Some of these are aspirational, but many reflect real-world accomplishment and experience.</blurb>
+		<blurb>The layout and features of this site were designed from scratch, without a template, and were implemented with classic web design methods.</blurb>
+		<blurb>Please make your way through the grounds, exploring links and dropdowns as you go.</blurb>
 		<blurb option="quote">"'After all is said and done,' said Wilson one day after supper, 'the best sledger is the man who sees what has to be done, and does it -- and says nothing about it.'"</blurb>
 		<blurb option="attrib">Apsley Cherry-Garland, The Worst Journey in the World</blurb>
 	</intro>

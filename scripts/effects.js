@@ -12,6 +12,9 @@ function expandBullet(bullet, expand_index) {
 	if (expand_index >= 0) {
 		var expand_index2 = expand_index * 2;
 		var line = document.getElementById(bullet).children[2].children[expand_index2].id;
+
+		// hard-coded to find the classList of the h3 element...
+		var classList = document.getElementById(bullet).children[2].children[expand_index2].children[0].classList;
 	}
 
 	// change the icon and slide the content up/down
@@ -20,7 +23,7 @@ function expandBullet(bullet, expand_index) {
 		$("#" + bullet + " span:first").html("expand_more")
 		$("#" + bullet + " .lineset").slideUp("slow", function(){
 			$("#" + bullet + " .line").hide();
-			if (expand_index >= 0) {
+			if ((expand_index >= 0) && (classList.contains("active"))) {
 				expandLine(line);
 			}
 		})		
