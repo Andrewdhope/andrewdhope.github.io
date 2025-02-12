@@ -357,7 +357,7 @@
         "Authors": "Richard Wright",
         "Publisher": "Harper Collins",
         "Published": "2003-07-29",
-        "Bagged": "2015-01-31",
+        "Bagged": "2024-12-20",
         "Pages": "676",
         "Language": "English",
         "Location": "Unknown",
@@ -1062,5 +1062,47 @@
         "Language": "English",
         "Location": "Unknown",
         "Date": "12/09/2024 01:20:39"
+    },
+    {
+        "ISBN": "9780486428215",
+        "Title": "The History of the Standard Oil Company",
+        "Quantity": 1,
+        "Description": "Briefer Version",
+        "Authors": "Ida M. Tarbell, David M. Chalmers",
+        "Publisher": "Courier Corporation",
+        "Published": "2003-02-10",
+        "Bagged": "2024-10-08",
+        "Pages": "258",
+        "Language": "English",
+        "Location": "Unknown",
+        "Date": "08/10/2024 21:28:28"
+    },
+    {
+        "ISBN": "9781564785732",
+        "Title": "Aliss at the Fire",
+        "Quantity": 1,
+        "Description": "",
+        "Authors": "Jon Fosse",
+        "Publisher": "Dalkey Archive Press",
+        "Published": "2010-01-01",
+        "Bagged": "2024-12-27",
+        "Pages": "-1",
+        "Language": "eng",
+        "Location": "Unknown",
+        "Date": "30/01/2025 17:03:40"
+    },
+    {
+        "ISBN": "9780679732761",
+        "Title": "Invisible Man",
+        "Quantity": 1,
+        "Description": "In this modern classic mystery, a scientist must face the consequences of rendering himself invisible with a secret formula.",
+        "Authors": "Ralph Ellison",
+        "Publisher": "Vintage",
+        "Published": "1995-03-14",
+        "Bagged": "2025-01-28",
+        "Pages": "616",
+        "Language": "English",
+        "Location": "Unknown",
+        "Date": "30/01/2025 17:03:59"
     }
 ]
