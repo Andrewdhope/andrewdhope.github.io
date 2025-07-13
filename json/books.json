@@ -1104,5 +1104,61 @@
         "Language": "English",
         "Location": "Unknown",
         "Date": "30/01/2025 17:03:59"
+    },
+    {
+        "ISBN": "9780486411217",
+        "Title": "The Republic",
+        "Quantity": 1,
+        "Description": "A model for the ideal state includes discussion of the nature and application of justice, the role of the philosopher in society, the goals of education, and the effects of art upon character.",
+        "Authors": "Plato, Benjamin Jowett",
+        "Publisher": "Courier Corporation",
+        "Published": "2000-04-18",
+        "Bagged": "2025-04-05",
+        "Pages": "289",
+        "Language": "English",
+        "Location": "Unknown",
+        "Date": "05/04/2025 14:57:49"
+    },
+    {
+        "ISBN": "9780190865962",
+        "Title": "The Framers' Coup",
+        "Quantity": 1,
+        "Description": "The Making of the United States Constitution",
+        "Authors": "Michael J. Klarman",
+        "Publisher": "Oxford University Press, USA",
+        "Published": "2018-07-01",
+        "Bagged": "2025-07-06",
+        "Pages": "880",
+        "Language": "English",
+        "Location": "Unknown",
+        "Date": "07/07/2025 16:09:51"
+    },
+    {
+        "ISBN": "9780809016433",
+        "Title": "Unruly Americans and the Origins of the Constitution",
+        "Quantity": 1,
+        "Description": "Average Americans Were the True Framers of the Constitution Woody Holton upends what we think we know of the Constitution's origins by telling the history of the average Americans who challenged the framers of the Constitution and forced on them the revisions that produced the document we now venerate. The framers who gathered in Philadelphia in 1787 were determined to reverse America's post-Revolutionary War slide into democracy. They believed too many middling Americans exercised too much influence over state and national policies. That the framers were only partially successful in curtailing citizen rights is due to the reaction, sometimes violent, of unruly average Americans. If not to protect civil liberties and the freedom of the people, what motivated the framers? In Unruly Americans and the Origins of the Constitution, Holton provides the startling discovery that the primary purpose of the Constitution was, simply put, to make America more attractive to investment. And the linchpin to that endeavor was taking power away from the states and ultimately away from the people. In an eye-opening interpretation of the Constitution, Holton captures how the same class of Americans that produced Shays's Rebellion in Massachusetts (and rebellions in damn near every other state) produced the Constitution we now revere. Unruly Americans and the Origins of the Constitution is a 2007 National Book Award Finalist for Nonfiction.",
+        "Authors": "Woody Holton",
+        "Publisher": "Hill and Wang",
+        "Published": "2008-10-14",
+        "Bagged": "2025-05-09",
+        "Pages": "384",
+        "Language": "English",
+        "Location": "Unknown",
+        "Date": "07/07/2025 16:10:27"
+    },
+    {
+        "ISBN": "9780753560136",
+        "Title": "An African History of Africa",
+        "Quantity": 1,
+        "Description": "From the Dawn of Humanity to Independence",
+        "Authors": "Zeinab Badawi",
+        "Publisher": "W H Allen",
+        "Published": "2024-01-01",
+        "Bagged": "2025-07-23",
+        "Pages": "0",
+        "Language": "English",
+        "Location": "Unknown",
+        "Date": "13/07/2025 17:00:47"
     }
 ]
